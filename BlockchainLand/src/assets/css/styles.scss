@@ -4,9 +4,18 @@
 //Mixins sass
 @import "./mixins/*.{scss,sass}";
 
+//Bootstrap (only here)
+@import "./common/_bootstrap-opts";
+
+//Own reset
+@import "./common/reset";
+
 //Vendors
-// @import "./vendors/vendors";
+@import "./vendors/vendors";
 // @import "../libs/svgBg/style";
+
+//content
+@import "./common/_content";
 
 //Atomic
 @import "./atomic/atomic";

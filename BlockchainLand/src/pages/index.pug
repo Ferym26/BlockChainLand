@@ -7,7 +7,6 @@ block vars
 	- var pageTitle = 'Главная'
 	- var dir = './'
 	- var layout = ''
-	- var componentsList = []
 
 block main
 
@@ -16,16 +15,5 @@ block main
 			.col-12
 				h1 main content
 
-				include ../components/component1/component1
-				include ../components/component2/component2
-
-				h2= componentsList
-
 block popups
-
-block componentsStyles
-	+style-includer()
-
-block scripts
-	
 

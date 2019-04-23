@@ -9,12 +9,12 @@ module.exports = function(gulp, options, plugins, webpackconfig) {
 			.pipe(plugins.plumber())
 			.pipe(plugins.webpackStream(webpackconfig))
 			.pipe(plugins.plumber.stop())
-			// .pipe(gulp.dest('./local/templates/html/js/'))
+			// .pipe(gulp.dest('./app/js/'))
 			// .pipe(plugins.uglify())
 			.pipe(plugins.rename({
 				suffix: '.min'
 			}))
-			.pipe(gulp.dest('./local/templates/html/js/'));
+			.pipe(gulp.dest('./app/js/'));
 
 		cd();
 	}

@@ -8,7 +8,6 @@ block vars
 	- var pageHead = ''
 	- var dir = ''
 	- var layout = ''
-	- var componentsList = [] //список имен всех компонентов
 
 doctype html
 html(lang='ru-RU')
@@ -22,7 +21,6 @@ html(lang='ru-RU')
 		include ../utility/_favicon
 
 		link(rel='stylesheet', href= dir + '../assets/css/critical/critical.css' inline)
-		link(rel='stylesheet', href= dir + 'styles.css')
 		link(rel='stylesheet', href= dir + 'css/styles.min.css')
 
 	body.no-js(class=bodyClass)
@@ -42,18 +40,10 @@ html(lang='ru-RU')
 
 		block popups
 
-		// Виджет для перехода по всем страницам проекта
-		+pages-viget()
-
-		// Полключение стилей компонентов
-		block componentsStyles
-
 		//- async defer
-		//- script(src="./js/jquery/jquery-3.3.1.min.js")
-		script(src="./js/jquery/jquery-3.0.0.slim.min.js")
-		//- Нужен для бутстрапных dropdowns, popovers, tooltips 
-		//- script(src="./js/vendor/popper.js" defer) 
+		script(src="./js/jquery/jquery-3.3.1.min.js")
+		script(src="./js/vendor/popper.js" defer) 
 		script(src="./js/bootstrap/bootstrap.min.js" defer)
+		script(src="./js/vendor/slick.min.js" defer)
 		script(src="./js/vendor/svg4everybody.js" defer)
-		block scripts
 		script(src="./js/app.min.js" defer)

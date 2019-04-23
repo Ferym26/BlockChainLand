@@ -1,18 +1,8 @@
 {
 	"name": "slamlight",
 	"version": "1.0.0",
-	"description": "SlamLight for easy frontend",
 	"main": "gulpfile.js",
-	"repository": {
-		"type": "git",
-		"url": "https://gitlab.com/Ferym26/slamlight"
-	},
 	"author": "ferym26@gmail.com",
-	"license": "ISC",
-	"bugs": {
-		"url": "https://gitlab.com/Ferym26/slamlight/issues"
-	},
-	"homepage": "https://gitlab.com/Ferym26/slamlight#README",
 	"devDependencies": {
 		"babel-core": "^6.26.0",
 		"babel-loader": "^7.1.2",
@@ -70,7 +60,7 @@
 		"webpack-stream": "^4.0.1"
 	},
 	"dependencies": {
-		"bootstrap": "^4.1.3",
+		"bootstrap": "^4.3.0",
 		"jquery": "^3.3.1",
 		"slick-carousel": "^1.8.1"
 	}

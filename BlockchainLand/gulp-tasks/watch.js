@@ -7,7 +7,7 @@ module.exports = function (gulp, options, plugins) {
 			gulp.watch(['./src/components/**/*.{scss,sass}'], gulp.series('sass-component', 'sass-styles'))
 		}
 		else {
-			gulp.watch([options.path.watch.sass], gulp.series('sass-styles', 'sass-wysywig'))
+			gulp.watch([options.path.watch.sass], gulp.series('sass-styles'))
 		}
 		
 		gulp.watch('./src/**/critical.{scss,sass}', gulp.series('sass-crit', 'pug'))

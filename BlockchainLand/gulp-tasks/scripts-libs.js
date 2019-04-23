@@ -8,7 +8,7 @@ module.exports = function(gulp, options, plugins) {
 			'!./src/assets/js/main.js',
 			'!./src/assets/js/init.js',
 		])
-			.pipe(gulp.dest('./local/templates/html/js/'));
+			.pipe(gulp.dest('./app/js/'));
 
 		cd();
 	}

@@ -1,12 +1,12 @@
 module.exports = {
-	componentsCss: true,
+	componentsCss: false,
 	path: {
 		build: {
-			html: './local/templates/html/',
-			js: './local/templates/html/js/',
-			css: './local/templates/html/css/',
-			images: './local/templates/html/images/',
-			fonts: './local/templates/html/fonts/'
+			html: './app/',
+			js: './app/js/',
+			css: './app/css/',
+			images: './app/images/',
+			fonts: './app/fonts/'
 		},
 
 		src: {
@@ -33,26 +33,21 @@ module.exports = {
 
 	serverConfig: {
 		server: {
-			baseDir: './'
+			baseDir: './app/'
 		},
-		startPath: "/local/templates/html/index.html",
+		startPath: "index.html",
 		// tunnel: true,
 		host: 'localhost',
-		port: '2500',
+		port: '1705',
 		reloadDelay: 100,
 		timestamps: false
 		// logPrefix: 'frontend'
 	},
 
 	package: require('./package.json'),
-	banner: ['/*!\n' +
-	' * <%= package.name %> v<%= package.version %>\n' + // переменные берутся с package.json
-	' * <%= new Date().getFullYear() %> <%= package.author %> (<%= package.homepage %>)\n' +
-	' * Based on Bootstrap <%= package.bootstrap %>\n' +
-	' */ \n'],
 
 	tinypngKeys: {
-		key: 'VqZ7lRcqB1Cksgqdgw7083J60d431MW3',
+		key: 'DCWVGlyYewzP4jGI9aWhETqtoVkFpi1c',
 		// key: 'cnCFvNA9iXZzylFV1NvIMBOK_B-lfQ8j'
 	}
 };

@@ -1,1 +1,1 @@
-.header{background-color:red;color:#fff}.block-3{font-size:50px}
+.header{height:48px;padding:64px 0 72px}.header__inner{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.header .logo{max-width:139px}.header .logo-img{display:block}.header__menu{display:-webkit-box;display:-ms-flexbox;display:flex}.header__menu-link{display:block;color:#373938}.header__menu-link:not(:last-child){margin-right:20px}

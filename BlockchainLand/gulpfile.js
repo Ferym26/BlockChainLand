@@ -21,8 +21,8 @@ gulp.task('clean', require('./gulp-tasks/clean')(gulp, options, plugins));
 gulp.task('pug', require('./gulp-tasks/pug')(gulp, options, plugins));
 gulp.task('pug-watch', require('./gulp-tasks/pug-watch')(gulp, options, plugins));
 gulp.task('sass-styles', require('./gulp-tasks/sass-styles')(gulp, options, plugins));
-gulp.task('sass-component', require('./gulp-tasks/sass-component')(gulp, options, plugins));
-gulp.task('sass-wysywig', require('./gulp-tasks/sass-wysywig')(gulp, options, plugins));
+// gulp.task('sass-component', require('./gulp-tasks/sass-component')(gulp, options, plugins));
+// gulp.task('sass-wysywig', require('./gulp-tasks/sass-wysywig')(gulp, options, plugins));
 gulp.task('sass-crit', require('./gulp-tasks/sass-crit')(gulp, options, plugins));
 gulp.task('scripts', require('./gulp-tasks/scripts')(gulp, options, plugins, webpackconfig));
 gulp.task('scripts-libs', require('./gulp-tasks/scripts-libs')(gulp, options, plugins));
@@ -54,7 +54,7 @@ gulp.task('default', gulp.series(
 	
 	// 'clean',
 	'sass-styles',
-	'sass-wysywig',
+	// 'sass-wysywig',
 	// 'sass-crit',
 	'scripts',
 	'pug',

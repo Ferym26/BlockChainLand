@@ -2,9 +2,8 @@ const $window = $(window);
 const $document = $(document);
 const $body = $('body');
 
-$document.ready(($window, $document) => {
-		// libs
-		// let bootsrap = require('./bootstrap/bootstrap-custom.js');
+$document.ready(() => {
+
 
 		// inits
 		let init = require('./init.js');
@@ -20,7 +19,5 @@ $document.ready(($window, $document) => {
 		let block3 = require('../../blocks/block-3/script.js');
 	
 		// Mixins
-		let pages_viget_1 = require('../../mixins/pages-viget/script.js')
-});
 
-// $document.ready $window.load
+});
