@@ -1,0 +1,6 @@
+//- миксин подключает стили компонентов на страницу
+
+mixin style-includer()
+
+	each item in componentsList
+		link(rel="stylesheet" href= dir + 'css/' + item + 'style.css')

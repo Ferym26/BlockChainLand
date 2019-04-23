@@ -1,0 +1,14 @@
+//Options
+@import "./common/settings";
+
+//Mixin
+@import "./mixins/*.{scss,sass}";
+
+//Bootstrap (only here)
+@import "./common/_bootstrap-opts";
+
+//Own reset
+@import "./common/reset";
+
+//content
+@import "./common/_content";

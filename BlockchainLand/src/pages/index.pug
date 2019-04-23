@@ -1,0 +1,31 @@
+extends ../layout/layout
+
+block vars
+	- var bodyClass = ''
+	- var footerClass = ''
+	- var headerClass = ''
+	- var pageTitle = 'Главная'
+	- var dir = './'
+	- var layout = ''
+	- var componentsList = []
+
+block main
+
+	.container
+		.row
+			.col-12
+				h1 main content
+
+				include ../components/component1/component1
+				include ../components/component2/component2
+
+				h2= componentsList
+
+block popups
+
+block componentsStyles
+	+style-includer()
+
+block scripts
+	
+

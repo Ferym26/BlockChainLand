@@ -1,0 +1,17 @@
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+
+	html{
+		height: 0;
+	}
+	body{
+		position: relative;
+	}
+
+	.wrapper {
+		min-width: initial;
+	}
+
+	.main {
+		flex: none;
+	}
+}

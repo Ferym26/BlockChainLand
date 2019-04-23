@@ -1,0 +1,34 @@
+//Options
+@import "./common/settings";
+
+//Mixins sass
+@import "./mixins/*.{scss,sass}";
+
+//Vendors
+// @import "./vendors/vendors";
+// @import "../libs/svgBg/style";
+
+//Atomic
+@import "./atomic/atomic";
+
+//Fonts
+@import "./common/fonts";
+
+//Styles
+@import "./common/main";
+
+//Partials styles
+@import "../../partials/**/style.{scss,sass}";
+
+//Components styles
+// @import "../../components/**/style.{scss,sass}";
+
+//Blocks styles
+@import "../../blocks/**/style.{scss,sass}";
+
+//Mixins styles
+@import "../../mixins/**/style.{scss,sass}";
+
+// fix IE11
+@import "./common/ie";
+@import "./common/nojs-fix";

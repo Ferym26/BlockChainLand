@@ -1,0 +1,6 @@
+$slick-font-family: 'false'; //убирает подключение иконочных шрифтов слика
+$slick-font-path: "../fonts/slick/";
+$slick-loader-path: "../images/";
+
+@import "../../../../node_modules/slick-carousel/slick/slick.scss";
+@import "../../../../node_modules/slick-carousel/slick/slick-theme.scss";

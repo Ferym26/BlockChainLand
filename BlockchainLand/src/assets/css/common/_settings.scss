@@ -1,0 +1,50 @@
+$componentsCss: true;
+
+// Grid
+$xl: 1400px;
+$lg: 1024px;
+$md: 768px;
+$sm: 576px;
+
+$gutter: 30px;
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: $sm,
+	md: $md,
+	lg: $lg,
+	xl: $xl
+);
+
+$container-max-widths: (
+	sm: 540px,
+	md: 720px,
+	lg: 960px,
+	xl: 1360px
+);
+
+// Fonts types
+$c-size: 14px;
+$f-main: "Roboto", Arial, Verdana, sans-serif;
+
+// Colors
+$c-main:		#A10101;
+$c-sec:			#36186E;
+$c-bg:			#ccc;
+$c-bg2:			rgba(65, 64, 102, 0.93);
+$c-text:		#080808;
+$c-blue:		#A5A4EF;
+$c-link: 		#798089;
+
+$blue: #234399;
+$red: #F45057;
+$green: #379F2F;
+$yellow: #e8a12b;
+$white: #fff;
+$black: #000;
+
+$trp: 			transparent;
+
+$colors: (
+	red: $c-main,
+);
