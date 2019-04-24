@@ -1,0 +1,95 @@
+.slider-main
+	max-width: 1312px
+	margin: 0 auto
+
+	&__wrap
+		
+		&:not(.slick-initialized)
+			display: flex
+			align-items: center
+			justify-content: space-between
+
+			.slider-main__item
+				width: 1312px
+				height: 640px
+
+				&:nth-child(n + 2)
+					display: none
+
+		&.slick-dotted.slick-slider
+			margin-bottom: 0
+
+	&__item
+		background: radial-gradient(1662.60px at 6.59% -18.67%, #E7EFFF 0%, rgba(255, 255, 255, 0) 100%), #FBFBFB
+
+		&-inner
+			display: flex
+
+			justify-content: space-between
+			height: 640px
+			padding: 50px 105px
+
+		&-title
+
+		&-descr
+			font-size: 25px
+
+		&-pic
+
+		&-img
+
+	&__bot
+		max-width: 950px
+		margin: 100px auto
+
+		&-text
+			max-width: 650px
+			font-size: 25px
+
+	.slick-dots
+		width: auto
+		left: 100px
+		bottom: 200px
+
+		li
+			width: auto
+			height: auto
+			padding: 0
+
+			button
+				width: 8px
+				height: 8px
+				background-color: $c-text
+				+circle
+				margin: 5px
+				padding: 0
+				+transish
+
+				&:before
+					display: none
+
+			&.slick-active
+
+				button
+					background-color: #FF8900
+
+	.slick-arrow
+		width: 22px
+		height: 22px
+		border-right: 2px solid $c-text
+		border-bottom: 2px solid $c-text
+		font-size: 0
+		line-height: 0
+		z-index: 20
+
+		&:before
+			display: none
+
+	.slick-next
+		right: 50px
+		transform: rotate(-45deg)
+
+	.slick-prev
+		left: 50px
+		transform: rotate(135deg)
+

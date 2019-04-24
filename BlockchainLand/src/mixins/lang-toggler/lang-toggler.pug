@@ -1,0 +1,17 @@
+//- 
+
+mixin lang-toggler()
+
+	+b.lang-toggler
+
+		+e.__item.--active
+			+e('a').__item-link(href='#') РУС
+			.icon-arrow
+
+		+e.__dropdown
+
+			+e.__item
+				+e('a').__item-link(href='#') ENG
+
+			+e.__item
+				+e('a').__item-link(href='#') БЛР

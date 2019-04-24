@@ -1,12 +1,13 @@
 @import '../../assets/css/common/components-import';
 
 .header
-	height: 48px
-	padding: 64px 0 72px
 
 	&__inner
 		display: flex
+		align-items: center
 		justify-content: space-between
+		height: 48px
+		padding: 64px 0 72px
 
 	.logo
 		max-width: 139px
@@ -20,6 +21,14 @@
 		&-link
 			display: block
 			color: $c-text
+			text-transform: uppercase
+			letter-spacing: 0.05em
+			font-weight: 400
+			+transish
+
+			&:hover
+				text-decoration: none
+				color: $c-main
 
 			&:not(:last-child)
 				margin-right: 20px

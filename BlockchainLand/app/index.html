@@ -15,7 +15,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#525ECA">
     <meta name="msapplication-TileColor" content="#525ECA">
     <meta name="theme-color" content="#525ECA">
-    <style>.header{height:48px;padding:64px 0 72px}.header__inner{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between}.header .logo{max-width:139px}.header .logo-img{display:block}.header__inner,.header__menu{display:-webkit-box;display:-ms-flexbox;display:flex}.header__menu-link{display:block;color:#373938}.header__menu-link:not(:last-child){margin-right:20px}</style>
+    <style>.header__inner{-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;height:48px;padding:64px 0 72px}.header .logo{max-width:139px}.header .logo-img{display:block}.header__inner,.header__menu{display:-webkit-box;display:-ms-flexbox;display:flex}.header__menu-link{display:block;color:#373938;text-transform:uppercase;letter-spacing:.05em;font-weight:400;-webkit-transition:all .3s;transition:all .3s}.header__menu-link:hover{text-decoration:none;color:#3069d5}.header__menu-link:not(:last-child){margin-right:20px}</style>
     <link rel="stylesheet" href="./css/styles.min.css">
   </head>
   <body class="no-js">
@@ -33,16 +33,118 @@
                 <div class="logo"><img class="logo-img" src="./images/logo.png" alt="logo"></div>
                 <nav class="header__menu"><a class="header__menu-link" href="#">Область приминения</a><a class="header__menu-link" href="#">AI/ML</a><a class="header__menu-link" href="#">Blockchain</a><a class="header__menu-link" href="#">MAP</a><a class="header__menu-link" href="#">Контакты</a>
                 </nav>
+                <div class="lang-toggler">
+                  <div class="lang-toggler__item lang-toggler__item--active"><a class="lang-toggler__item-link" href="#">РУС</a>
+                    <div class="icon-arrow"></div>
+                  </div>
+                  <div class="lang-toggler__dropdown">
+                    <div class="lang-toggler__item"><a class="lang-toggler__item-link" href="#">ENG</a>
+                    </div>
+                    <div class="lang-toggler__item"><a class="lang-toggler__item-link" href="#">БЛР</a>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </header>
       <main class="main">
-        <div class="container">
-          <div class="row">
-            <div class="col-12">
-              <h1>main content</h1>
+        <div class="slider-main">
+          <div class="slider-main__wrap js_slider-main">
+            <div class="slider-main__item">
+              <div class="slider-main__item-inner">
+                <div class="slider-main__item-text">
+                  <h1 class="slider-main__item-title h1">BlockChain
+                  </h1>
+                  <div class="slider-main__item-descr">Сбор, хранение и анализ данных
+                  </div>
+                </div>
+                <div class="slider-main__item-pic"><img class="slider-main__item-img" src="./images/slider-main_1.svg" alt="" role="presentation"/>
+                </div>
+              </div>
+            </div>
+            <div class="slider-main__item">
+              <div class="slider-main__item-inner">
+                <div class="slider-main__item-text">
+                  <h1 class="slider-main__item-title h1">BlockChain
+                  </h1>
+                  <div class="slider-main__item-descr">Сбор, хранение и анализ данных
+                  </div>
+                </div>
+                <div class="slider-main__item-pic"><img class="slider-main__item-img" src="./images/slider-main_1.svg" alt="" role="presentation"/>
+                </div>
+              </div>
+            </div>
+            <div class="slider-main__item">
+              <div class="slider-main__item-inner">
+                <div class="slider-main__item-text">
+                  <h1 class="slider-main__item-title h1">BlockChain
+                  </h1>
+                  <div class="slider-main__item-descr">Сбор, хранение и анализ данных
+                  </div>
+                </div>
+                <div class="slider-main__item-pic"><img class="slider-main__item-img" src="./images/slider-main_1.svg" alt="" role="presentation"/>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-main__bot">
+            <div class="slider-main__bot-text">Создание и развертывание приложений на облачной платформе Интернета вещей
+            </div>
+          </div>
+        </div>
+        <div class="app-area">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>Область применения</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="aiml">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>aiml</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="blockchain">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>blockchain</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="map">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>map</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="clients">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>Клиенты</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-main">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h2>Форма обратной связи</h2>
+              </div>
             </div>
           </div>
         </div>

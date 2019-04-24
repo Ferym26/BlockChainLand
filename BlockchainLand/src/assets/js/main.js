@@ -2,6 +2,10 @@ const $window = $(window);
 const $document = $(document);
 const $body = $('body');
 
+window.BlockChain = {};
+window.BlockChain.UI = {};
+window.BlockChain.sliders = {};
+
 $document.ready(() => {
 
 
@@ -14,10 +18,8 @@ $document.ready(() => {
 		// Components
 	
 		// Blocks
-		let block1 = require('../../blocks/block-1/script.js');
-		let block2 = require('../../blocks/block-2/script.js');
-		let block3 = require('../../blocks/block-3/script.js');
+		let sliderMain = require('../../blocks/sliders/slider-main/script.js');
 	
 		// Mixins
-
+		let landToggler = require('../../mixins/lang-toggler/script.js');
 });
