@@ -1,0 +1,133 @@
+// .custom-select {
+// 	position: relative;
+// 	height: 40px;
+// 	border: 1px solid $c-text;
+// 	border-radius: 2px;
+// 	box-shadow: none;
+// 	outline: 0;
+// 	background-color: #fff;
+// 	@include transish;
+
+// 	select {
+// 		display: none;
+// 		visibility: hidden;
+// 	}
+
+// 	.select {
+		
+// 		&-hide {
+// 			display: none;
+// 			visibility: hidden;
+// 			padding-right: 10px;
+// 		}
+
+// 		&-selected {
+// 			display: block;
+// 			width: 100%;
+// 			line-height: 38px;
+// 			transition: .2s;
+// 			font-size: 14px;
+// 			margin-bottom: 20px;
+// 			margin-top: -7px;
+// 			max-height: 37px;
+// 			overflow: hidden;
+
+// 			&:focus {
+// 				border-color: #fff;
+// 			}
+
+// 			&:after {
+// 				position: absolute;
+// 				right: 0;
+// 				top: 50%;
+// 				transform: translateY(-50%);
+// 				transition: .2s;
+// 			}
+
+// 			&:before {
+// 				position: absolute;
+// 				right: 0;
+// 				top: 50%;
+// 				transform: translateY(-50%);
+// 				transition: .2s;
+// 				opacity: 0;
+// 			}
+
+// 			&:hover:after,
+// 			&.select-arrow-active:after {
+// 				opacity: 0;
+// 			}
+
+// 			&:hover:before,
+// 			&.select-arrow-active:before {
+// 				opacity: 1;
+// 			}
+
+// 			&:hover,
+// 			&.select-arrow-active {
+// 				border-color: #fff;
+
+// 				i {
+// 					* {
+// 						fill: #fff;
+// 					}
+// 				}
+// 			}
+
+// 			i {
+// 				right: 0;
+// 				display: inline-flex;
+
+// 				* {
+// 					width: 20px;
+// 					height: 20px;
+// 					fill: #fff;
+// 				}
+// 			}
+// 		}
+
+// 		&-items {
+// 			position: absolute;
+// 			top: 100%;
+// 			right: 0;
+// 			left: 0;
+// 			max-height: 231px;
+// 			overflow-y: auto;
+// 			z-index: 999;
+// 			margin: 0;
+// 			padding: 0;
+// 			list-style: none;
+// 			background-color: #fff;
+// 			box-shadow: 0 6px 10px 0 rgba(#333333, .4);
+
+// 			> div {
+// 				margin: 0;
+// 				min-height: 33px;
+// 				line-height: 1.4;
+// 				padding: 5px 15px;
+// 				font-size: 14px;
+// 				cursor: pointer;
+
+// 				&:hover {
+// 					color: $c-main;
+// 				}
+
+// 				&.selected {
+// 					color: #fff;
+// 					position: relative;
+// 					background: $c-main;
+
+// 					&:after {
+// 						content: '';
+// 						width: 20px;
+// 						height: 20px;
+// 						position: absolute;
+// 						right: 15px;
+// 						top: 18px;
+// 					}
+// 				}
+// 			}
+// 		}
+
+// 	}
+// }

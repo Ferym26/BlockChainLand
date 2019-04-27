@@ -1,0 +1,102 @@
+.aiml
+	margin-top: 100px
+	overflow: hidden
+
+	&__inner
+
+	&__title
+		display: flex
+		align-items: center
+
+		&-text
+
+		&-descr
+			max-width: 380px
+			margin-left: auto
+			margin-right: 113px
+			font-size: 25px
+
+	&__slider
+		position: relative
+		margin: 0 -12px
+		margin-top: 75px
+
+		&:after
+			+pseudo
+			width: 50vw
+			height: 100%
+			top: 0
+			right: 100%
+			bottom: 0
+			background-color: #fff
+
+		&:before
+			+pseudo
+			width: calc((100vw - 1080px) / 2)
+			height: 100%
+			top: 0
+			left: 100%
+			bottom: 0
+			background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1))
+			z-index: 10
+
+		&-nav
+			display: flex
+			margin-left: 60px
+
+			&-arrow
+				width: 17px
+				height: 17px
+				border-right: 2px solid #373938
+				border-bottom: 2px solid #373938
+				cursor: pointer
+
+				&--prev
+					margin-right: 18px
+					transform: rotate(135deg)
+
+				&--next
+					transform: rotate(-45deg);
+
+		&-item
+			position: relative
+			height: 304px
+			margin: 0 12px
+			padding: 32px 30px 32px
+			background: #F7F7F7
+			border-radius: 2px
+
+			&-wrap
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				height: 100%
+
+		&-pic
+			position: relative
+			width: 139px
+			height: 104px
+			border: 1px solid #D3D3D3
+			border-radius: 2px
+
+			&-img
+				position: absolute
+				+center
+
+		&-title
+			max-width: 230px
+			font-size: 25px
+			line-height: 1.28
+
+		&-icon
+			position: absolute
+			bottom: 41px
+			right: 25px
+			width: 39px
+			height: 12px
+
+			.icon
+				fill: $trp
+
+		.slick-list
+			overflow: visible

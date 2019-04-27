@@ -1,0 +1,100 @@
+.app-area
+	margin-top: 90px
+
+	&__inner
+		padding-bottom: 100px
+		border-bottom: 1px solid #D3D3D3
+
+	&__slider
+		display: flex
+		justify-content: space-between
+
+		&-nav
+			position: relative
+			padding-top: 55px
+			z-index: 20
+
+			&-list
+				display: flex
+				margin-top: 70px
+			
+			&-col
+				flex: 0 0 250px
+
+				&:last-child
+					margin-left: 40px
+
+			&-item
+				position: relative
+				min-height: 80px
+				padding-top: 16px
+				padding-bottom: 16px
+				cursor: pointer
+
+				&:after
+					+pseudo
+					width: 100%	
+					height: 1px
+					top: 0
+					left: 0
+					right: 0
+					background-color: #D3D3D3
+					+transish
+
+				&:hover
+
+					&:after
+						background-color: #FF8900
+
+				&.active
+					color: #373938
+					font-weight: 400
+
+					&:after
+						height: 3px
+						background-color: #FF8900
+
+				&-text
+					max-width: 200px
+					font-size: 20px
+					line-height: 1.25
+
+		&-main
+			position: relative
+			flex-shrink: 0
+			width: 595px
+			height: 736px
+			border-radius: 2px
+			z-index: 10
+
+		&-item
+			position: relative
+			padding: 117px 85px 145px
+			border: 15px solid #8DDCF6
+			overflow: hidden
+
+			&:before
+				+pseudo
+				width: 586px
+				height: 656px
+				bottom: -69px
+				right: -76px
+				background: url('../images/finger-print.svg') no-repeat 50% 50%
+
+			&-wrap
+				position: relative
+				z-index: 20
+
+			&-pic
+				width: 146px
+				height: 125px
+
+			&-title
+				margin-top: 45px
+				font-size: 32px
+
+			&-descr
+				margin-top: 23px
+
+			&-btn
+				margin-top: 62px

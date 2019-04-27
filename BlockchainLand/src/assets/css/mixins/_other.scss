@@ -54,16 +54,16 @@
 
 @mixin mainGrad($side) {
 	@if $side == 'r' {
-		background: linear-gradient(to left, #4b66db 0%, #3e48b7 100%); // $c-sec
+		background: linear-gradient(to left, #4b66db 0%, #3e48b7 100%); // $c-main
 	}
 	@if $side == 'l' {
-		background: linear-gradient(to left, #3e48b7 0%, #4b66db 100%); // $c-sec
+		background: linear-gradient(to left, #3e48b7 0%, #4b66db 100%); // $c-main
 	}
 	@if $side == 't' {
-		background: linear-gradient(to top, #4b66db 0%, #3e48b7 100%); // $c-sec
+		background: linear-gradient(to top, #4b66db 0%, #3e48b7 100%); // $c-main
 	}
 	@if $side == 'b' {
-		background: linear-gradient(to bottom, #3e48b7 0%, #4b66db 100%); // $c-sec
+		background: linear-gradient(to bottom, #3e48b7 0%, #4b66db 100%); // $c-main
 	}
 }
 

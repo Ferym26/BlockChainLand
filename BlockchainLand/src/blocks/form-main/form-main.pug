@@ -2,4 +2,49 @@
 	.container
 		.row
 			.col-12
-				h2 Форма обратной связи
+
+				+e.__inner
+
+					+e.__title
+						+e('h2').__title-text.h2 Форма обратной связи
+
+						+e.__title-descr Остались вопросы или хочется больше информации? Заполните форму и наши специалисты свяжуться с вами.
+
+					+e.__form
+						form(action="#")
+
+						.form-group
+							input.form-control#FIELD-NAME(
+									type="text"
+									placeholder='Имя'
+								)
+
+						.form-group
+							input.form-control#FIELD-MAIL(
+									type="text"
+									placeholder='Email'
+								)
+
+						.form-group.has-error
+							input.form-control#FIELD-PHONE(
+									type="text"
+									placeholder='Телефон'
+								)
+							.help-block Поле обязательно для заполнения
+
+						.form-group
+							textarea.form-text(
+								placeholder='Комментарий *'
+							)
+
+						.form-group.has-error
+							label.custom-checkbox__label
+								input.custom-checkbox(type="checkbox")
+								span.custom-checkbox__text Даю согласие на обработку моих #[a(href="#") персональных данных]*
+							.help-block Поле обязательно для заполнения
+
+						+e.__form-footer
+							
+							p * поля обязательны для заполнения
+
+							button.btn Отправить

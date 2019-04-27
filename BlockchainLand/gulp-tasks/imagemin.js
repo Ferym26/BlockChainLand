@@ -1,6 +1,7 @@
 module.exports = function(gulp, options, plugins) {
 
 	return function (cb) {
+
 		gulp.src([
 				'./src/assets/images/**/*.{png,jpg,jpeg}'
 			], {allowEmpty: true})

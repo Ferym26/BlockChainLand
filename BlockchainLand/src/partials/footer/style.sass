@@ -1,1 +1,109 @@
 .footer
+	margin-top: 98px
+	margin-bottom: 88px
+
+	&__inner
+		max-width: 1312px
+		margin: 0 auto
+		padding: 79px 64px 0
+		background: #EEF4F5
+
+	&__top
+		display: flex
+		align-items: flex-start
+		padding-bottom: 90px
+		border-bottom: 1px solid #D3D3D3
+
+	&__bot
+		display: flex
+		justify-content: space-between
+		max-width: 1000px
+		margin: 0 auto
+		padding: 52px 0 56px
+		
+	&__logo
+		width: 72px
+		height: 104px
+
+		.logo-img
+
+	&__menu
+		display: block
+		margin-left: 80px
+
+		&-link
+			display: block
+			font-weight: 400
+			color: $c-text
+
+			&:not(:last-child)
+				margin-bottom: 12px
+
+	&__contacts
+		margin-left: auto
+		margin-right: 122px
+
+		&-phone
+
+			&-item
+				display: block
+				color: $c-text
+				font-size: 25px
+				font-weight: 500
+				line-height: 1
+
+				&:not(:last-child)
+					margin-bottom: 7px
+
+		&-addr
+			max-width: 280px
+			margin-top: 20px
+			color: #707070
+
+		&-mail
+			margin-top: 12px
+
+			&-item
+
+	&__social
+		display: flex
+		flex-wrap: wrap
+		width: 132px
+
+		&-item
+			position: relative
+			width: 32px
+			height: 32px
+			+circle
+			margin-right: 12px
+			margin-bottom: 12px
+			background-color: #CECECE
+
+			&:hover
+
+				.icon
+					fill: #fff
+
+			.icon
+				position: absolute
+				+center
+				width: 18px
+				height: 18px
+				fill: #EEF4F5
+				+transish
+
+	&__copyright
+
+	&__to-top
+		position: relative
+		padding-left: 30px
+		color: #707070
+		cursor: pointer
+
+		.icon
+			position: absolute
+			left: 0
+			+hcenter
+			width: 17px
+			height: 8px
+			fill: $trp

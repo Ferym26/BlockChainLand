@@ -1,6 +1,45 @@
 +b('footer').footer
 
-	.container
-		.row
-			.col-lg-12
-				p footer
+	+e.__inner
+
+		+e.__top
+
+			+e.__logo
+				img.logo-img(src="./images/logo2.png", alt="logo")
+
+			+e('nav').__menu
+				+e('a').__menu-link(href='#') Область приминения
+				+e('a').__menu-link(href='#') AI/ML
+				+e('a').__menu-link(href='#') Blockchain
+				+e('a').__menu-link(href='#') MAP
+				+e('a').__menu-link(href='#') Контакты
+
+			+e.__contacts
+				
+				+e.__contacts-phone
+					+e('a').__contacts-phone-item(href='tel:375 29 6387087') +375 (29) 683-70-87
+					+e('a').__contacts-phone-item(href='tel:375 29 6387087') +375 (29) 683-70-87
+				
+				+e.__contacts-addr РБ, Минск, ул. П.Мстиславца, 95 этаж, оф.7-17
+				
+				+e.__contacts-mail
+					+e('a').__contacts-mail-item(href='mailto:sh@airconn.by') sh@airconn.by
+
+			+e.__social
+
+				+e('a').__social-item(href='#')
+					+icon('i-fb')
+				+e('a').__social-item(href='#')
+					+icon('i-vk')
+				+e('a').__social-item(href='#')
+					+icon('i-in')
+				+e('a').__social-item(href='#')
+					+icon('i-google')
+
+		+e.__bot
+
+			+e.__copyright © 2019, Airconn
+
+			+e.__to-top.js_to-top Наверх
+				+icon('i-arrow-top')
+			

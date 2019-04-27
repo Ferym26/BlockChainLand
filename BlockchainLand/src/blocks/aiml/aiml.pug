@@ -1,5 +1,34 @@
+-
+	var aimlData = [
+		{pic: 'aiml-icon_1.svg', title: 'Обнаружение аномалий'},
+		{pic: 'aiml-icon_2.svg', title: 'Прогнозное техническое обслуживание'},
+		{pic: 'aiml-icon_3.svg', title: 'Выявление мошенничества'},
+		{pic: 'aiml-icon_4.svg', title: 'Анализ паттернов поведения пользователей'},
+		{pic: 'aiml-icon_5.svg', title: 'Пространственно-временное прогнозирование'},
+	]
+
 +b.aiml
 	.container
 		.row
 			.col-12
-				h2 aiml
+
+				+e.__inner
+
+					+e.__title
+						+e('h2').__title-text.h2 AI/ML
+						+e.__slider-nav
+							+e.__slider-nav-arrow.--prev
+							+e.__slider-nav-arrow.--next
+						+e.__title-descr Разметка для искусственного интеллекта
+
+					+e.__slider.js_slider-aiml
+
+						each item in aimlData
+
+							+e.__slider-item
+								+e.__slider-item-wrap
+									+e.__slider-pic
+										+e('img').__slider-pic-img(src=`./images/${item.pic}` alt='icon')
+									+e.__slider-title= item.title
+									+e.__slider-icon
+										+icon('i-arrow')

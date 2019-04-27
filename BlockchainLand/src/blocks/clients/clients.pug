@@ -2,4 +2,29 @@
 	.container
 		.row
 			.col-12
-				h2 Клиенты
+
+				+e.__inner
+
+					+e.__title
+
+						+e('h2').__title-text.h2 Клиенты
+						
+						+e.__slider-nav(style='display: none;')
+							+e.__slider-nav-arrow.--prev
+							+e.__slider-nav-arrow.--next
+						
+						+e.__descr Мы открыты и всегда рады новым знакомствам и сотрудничеству
+
+					+e.__slider.js_clients-slider
+
+						+e.__slider-item
+							+e('img').__slider-item-img(src='./images/client-1.png')
+
+						+e.__slider-item
+							+e('img').__slider-item-img(src='./images/client-2.png')
+
+						+e.__slider-item
+							+e('img').__slider-item-img(src='./images/client-3.png')
+
+						+e.__slider-item
+							+e('img').__slider-item-img(src='./images/client-4.png')

@@ -3,4 +3,44 @@
 		.row
 			.col-12
 
-				h2 Область применения
+				+e.__inner
+
+					+e.__slider
+
+						+e.__slider-nav
+							+e('h2').__title.h2 Область применения
+
+							+e.__slider-nav-list
+								+e.__slider-nav-col
+									+e.__slider-nav-item.active
+										+e.__slider-nav-item-text Энергетика
+									+e.__slider-nav-item 
+										+e.__slider-nav-item-text Транспортные системы
+									+e.__slider-nav-item 
+										+e.__slider-nav-item-text Экология контроль выбросов
+									+e.__slider-nav-item 
+										+e.__slider-nav-item-text Умный город
+									+e.__slider-nav-item 
+										+e.__slider-nav-item-text Умные парковки
+								+e.__slider-nav-col
+									+e.__slider-nav-item 
+										+e.__slider-nav-item-text Газ и вода
+									+e.__slider-nav-item 
+										+e.__slider-nav-item-text Фискализация
+									+e.__slider-nav-item 
+										+e.__slider-nav-item-text Учёт налогов
+									+e.__slider-nav-item 
+										+e.__slider-nav-item-text Прогнозирование
+									+e.__slider-nav-item 
+										+e.__slider-nav-item-text Освещение
+						
+						+e.__slider-main
+
+							+e.__slider-item
+								+e.__slider-item-wrap
+									+e.__slider-item-pic
+										img(src="./images/app-icon_1.svg", alt="pic")
+									+e.__slider-item-title Энергетика
+									+e.__slider-item-descr Современные электрические счётчики это не только приборы учёта электроэнергии, но и универсальные измерители параметров тока.
+									+e.__slider-item-btn
+										button.btn.btn--outline Подробнее

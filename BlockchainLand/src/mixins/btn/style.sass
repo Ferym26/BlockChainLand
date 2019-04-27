@@ -1,0 +1,154 @@
+.btn
+	$this: &
+
+	position: relative
+	display: inline-block
+	height: 58px
+	padding: 0 38px
+
+	font-family: $f-main
+	font-size: 16px
+	color: #fff
+	line-height: 58px
+	border-radius: 5px
+	text-decoration: none
+	text-align: center
+	letter-spacing: -0.01em
+	background-color: $c-main
+
+	border: 1px solid $c-main
+	outline: none
+	cursor: pointer
+	user-select: none
+	white-space: nowrap
+	+transish
+
+	&:hover,
+	&:active,
+	&:focus
+		text-decoration: none !important
+
+	&:hover
+		color: $c-main
+		background-color: #fff
+
+	+media($lg)
+		font-size: 16px
+
+	// Цвета
+	// &--white
+	// 	color: $c-text
+	// 	background-color: #fff
+
+	// 	&:hover
+	// 		color: #fff
+	// 		border-color: $c-main
+	// 		background-color: $c-main
+
+	// 	&:active
+	// 		border-color: darken($c-main, 10%)
+	// 		background-color: darken($c-main, 10%)
+
+	// &--red
+	// 	color: #fff
+	// 	background-color: $c-main
+
+	// 	&:hover
+	// 		background-color: darken($c-main, 10%)
+		
+	// 	&:active
+	// 		background-color: darken($c-main, 15%)
+
+	// &--dark-bg
+
+	// 	&#{$this}--outline
+	// 		color: #fff
+
+	// 		&:hover
+	// 			color: $c-text
+	// 			border-color: #fff
+	// 			background-color: #fff
+
+	// 		&:active
+	// 			background-color: darken(#fff, 15%)
+
+	// Размеры
+	// &--lg
+	// 	height: 70px
+	// 	font-size: 19px
+	// 	line-height: 70px
+
+	// &--sm
+	// 	height: 40px
+	// 	padding: 0 30px
+	// 	font-size: 14px
+	// 	line-height: 40px
+
+	// 	&.btn--icon
+	// 		padding-left: 60px
+
+	// 		.icon
+	// 			left: 23px
+
+	// Обводка
+	&--outline
+		border: 1px solid #373938
+		color: #373938
+		background-color: #fff
+
+		&:hover
+			color: #fff
+			border-color: $c-main
+			background-color: $c-main
+
+		&:active
+			border-color: darken($c-main, 10%)
+			background-color: darken($c-main, 10%)
+
+	// Иконки
+	// &--icon
+	// 	padding-left: 80px
+
+	// 	.icon
+	// 		position: absolute
+	// 		display: block
+	// 		+hcenter
+	// 		left: 30px
+	// 		width: 22px
+	// 		height: 22px
+	// 		fill: #fff
+
+	// Состояние отключеной кнопки
+	&[disabled]
+		background-color: lighten($c-text, 40%) !important
+		background-image: none !important
+		color: #fff !important
+		border: none !important
+		cursor: default
+
+	// Кнопка с крестиком
+	// &-reset
+	// 	position: relative
+	// 	display: block
+	// 	padding-left: 16px
+	// 	font-size: 19px
+	// 	color: $c-text
+
+	// 	+media($lg)
+	// 		font-size: 16px
+
+	// 	&:hover
+	// 		text-decoration: none
+
+	// 		.icon
+	// 			transform: translate(0, -50%) scale(1.4)
+	// 			fill: #000
+
+	// 	.icon
+	// 		position: absolute
+	// 		display: block
+	// 		+size(9px)
+	// 		+hcenter
+	// 		left: 0
+	// 		fill: #929292
+	// 		+transish

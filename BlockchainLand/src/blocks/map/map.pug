@@ -2,4 +2,15 @@
 	.container
 		.row
 			.col-12
-				h2 map
+				
+				+e.__inner
+
+					+e('h2').__title.h2 Map
+
+					+e.__descr Интеллектуальное картографирование интеллектуальное программное обеспечение
+
+					+e.__btn
+						button.btn Подробнее
+
+					+e.__pic
+						+e('img').__pic(src='./images/map-pic.png' alt='pic')

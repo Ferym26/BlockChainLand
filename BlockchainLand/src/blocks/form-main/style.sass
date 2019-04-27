@@ -1,0 +1,45 @@
+.form-main
+
+	&__inner
+		position: relative
+		padding: 72px 0 100px 110px
+		border: 1px solid #DFDFDF
+		border-radius: 2px
+		overflow: hidden
+
+		&:after //bg
+			+pseudo
+			width: 702px
+			height: 784px
+			bottom: -116px
+			right: -130px
+			background: url('../images/finger-print.svg') no-repeat 50% 50%
+
+	&__title
+		position: relative
+		z-index: 10
+
+		&-text
+			font-size: 46px
+
+		&-descr
+			max-width: 500px
+			margin-top: 23px
+
+	&__form
+		position: relative
+		max-width: 438px
+		margin-top: 30px
+		z-index: 10
+
+		&-footer
+			border-top: 1px solid #C4C4C4
+			margin-top: 23px
+			padding-top: 25px
+
+			p
+				font-size: 14px
+				letter-spacing: -0.01em;
+
+			.btn
+				margin-top: 34px

@@ -1,0 +1,17 @@
+//- 
+
+mixin custom-select(data)
+	
+	- data = data || {}
+	
+	.custom-select&attributes(attributes)
+		if data.items
+			select
+				each item in data.items
+					if data.disabled
+						option(value=item.value disabled)=item.value
+					else
+						option(value=item.value)=item.value
+		else
+			select
+				option(value="")

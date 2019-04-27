@@ -19,6 +19,10 @@ $document.ready(() => {
 	
 		// Blocks
 		let sliderMain = require('../../blocks/sliders/slider-main/script.js');
+		let appSlider = require('../../blocks/app-area/script.js');
+		let aiml = require('../../blocks/aiml/script.js');
+		let clients = require('../../blocks/clients/script.js');
+		let formMain = require('../../blocks/form-main/script.js');
 	
 		// Mixins
 		let landToggler = require('../../mixins/lang-toggler/script.js');
