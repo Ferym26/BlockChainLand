@@ -9,7 +9,7 @@
 		display: flex
 		justify-content: space-between
 
-		&-nav
+		&-marker
 			position: relative
 			padding-top: 55px
 			z-index: 20
@@ -59,18 +59,39 @@
 					font-size: 20px
 					line-height: 1.25
 
+		&-nav
+			position: absolute
+			top: 119px	
+			right: 80px
+			display: flex
+			margin-left: 60px
+
+			&-arrow
+				width: 17px
+				height: 17px
+				border-right: 2px solid #373938
+				border-bottom: 2px solid #373938
+				cursor: pointer
+
+				&--prev
+					margin-right: 30px
+					transform: rotate(135deg)
+
+				&--next
+					transform: rotate(-45deg)
+
 		&-main
 			position: relative
 			flex-shrink: 0
 			width: 595px
 			height: 736px
+			border: 15px solid #8DDCF6
 			border-radius: 2px
 			z-index: 10
 
 		&-item
 			position: relative
 			padding: 117px 85px 145px
-			border: 15px solid #8DDCF6
 			overflow: hidden
 
 			&:before
