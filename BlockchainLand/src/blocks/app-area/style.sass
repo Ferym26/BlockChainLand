@@ -48,6 +48,7 @@
 			
 			&-col
 				flex: 0 0 250px
+				border-bottom: 1px solid #D3D3D3
 
 				+media($xl)
 					flex: 0 0 200px
@@ -63,6 +64,11 @@
 
 					+media($lg)
 						margin-left: 0
+
+				&:first-child
+
+					+media($lg)
+						border: none
 
 			&-item
 				position: relative
@@ -143,6 +149,17 @@
 			border-radius: 2px
 			z-index: 10
 
+			&:before
+				+pseudo
+				width: 586px
+				height: 656px
+				bottom: -53px
+				right: -64px
+				background: url('../images/finger-print.svg') no-repeat 50% 50%
+
+				+media($lg)
+					display: none
+
 			+media($xl)
 				width: 530px
 				height: 700px
@@ -169,17 +186,6 @@
 
 			+media($sm)
 				padding: 0
-
-			&:before
-				+pseudo
-				width: 586px
-				height: 656px
-				bottom: -69px
-				right: -76px
-				background: url('../images/finger-print.svg') no-repeat 50% 50%
-
-				+media($lg)
-					display: none
 
 			&-wrap
 				position: relative
