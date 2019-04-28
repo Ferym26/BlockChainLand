@@ -30,4 +30,12 @@ h2,
 	letter-spacing: -0.02em;
 	font-weight: 300;
 	line-height: 1;
+
+	@include media($xl) {
+		font-size: 45px;
+	}
+
+	@include media($sm) {
+		font-size: 38px;
+	}
 }

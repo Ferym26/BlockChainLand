@@ -2,6 +2,16 @@
 	max-width: 1312px
 	margin: 0 auto
 
+	+media($lg)
+		max-width: 720px
+
+	+media($md)
+		max-width: 520px
+
+	+media($sm)
+		max-width: 100%
+		padding: 0 15px
+
 	&__wrap
 		
 		&:not(.slick-initialized)
@@ -25,16 +35,31 @@
 
 		&-inner
 			display: flex
-
 			justify-content: space-between
 			height: 610px
 			padding: 142px 110px 50px
 
+			+media($lg)
+				height: 392px
+				padding: 105px 60px 30px
+
+			+media($md)
+				padding: 50px 30px 30px
+
 		&-title
+
+			+media($lg)
+				font-size: 60px
+
+			+media($sm)
+				font-size: 42px
 
 		&-descr
 			margin-top: 17px
 			font-size: 25px
+
+			+media($lg)
+				font-size: 20px
 
 		&-pic
 
@@ -44,15 +69,27 @@
 		max-width: 875px
 		margin: 102px auto 0
 
+		+media($lg)
+			margin: 50px auto 0
+
 		&-text
 			max-width: 650px
 			font-size: 25px
 			line-height: 1.4
 
+			+media($lg)
+				font-size: 20px
+
 	.slick-dots
 		width: auto
 		left: 100px
 		bottom: 113px
+
+		+media($lg)
+			bottom: 60px
+
+		+media($md)
+			left: 30px
 
 		li
 			width: auto
@@ -86,6 +123,13 @@
 		line-height: 0
 		z-index: 20
 
+		+media($lg)
+			width: 22px
+			height: 22px
+
+		+media($md)
+			display: none !important
+
 		&:before
 			display: none
 
@@ -93,7 +137,13 @@
 		right: 50px
 		transform: rotate(-45deg)
 
+		+media($lg)
+			right: 15px
+
 	.slick-prev
 		left: 50px
 		transform: rotate(135deg)
+
+		+media($lg)
+			left: 15px
 

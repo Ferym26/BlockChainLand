@@ -1,11 +1,24 @@
 .blockchain
 	margin-top: 80px
 
+	+media($sm)
+		margin-top: 40px
+
 	&__inner
 		padding: 60px 50px 58px
 		padding-left: 600px
 		background: linear-gradient(39.03deg, #8DDCF6 -48.89%, #EAFAFF 81.62%)
 		border-radius: 2px
+
+		+media($xl)
+			padding-left: 450px
+
+		+media($lg)
+			padding: 50px 50px 50px 350px
+
+		+media($md)
+			padding: 40px
+
 
 	&__title
 

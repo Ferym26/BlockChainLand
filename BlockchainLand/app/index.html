@@ -15,7 +15,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#525ECA">
     <meta name="msapplication-TileColor" content="#525ECA">
     <meta name="theme-color" content="#525ECA">
-    <style>.header__inner,.header__menu{display:-webkit-box;display:-ms-flexbox;display:flex}.header__inner{-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:45px 0 51px}.header .logo{max-width:139px}.header .logo-img{display:block}.header__menu{margin-left:auto;margin-right:150px}.header__menu-link{display:block;color:#373938;text-transform:uppercase;font-size:14px;letter-spacing:.05em;font-weight:400;-webkit-transition:all .3s;transition:all .3s}.header__menu-link:hover{text-decoration:none;color:#3069d5}.header__menu-link:not(:last-child){margin-right:34px}</style>
+    <style>.header{position:relative}.header__inner,.header__menu{display:-webkit-box;display:-ms-flexbox;display:flex}.header__inner{-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:45px 0 51px}.header .logo{max-width:139px}.header .logo-img{display:block}.header__menu{margin-left:auto;margin-right:150px}.header__menu-link{display:block;color:#373938;text-transform:uppercase;font-size:14px;letter-spacing:.05em;font-weight:400;-webkit-transition:all .3s;transition:all .3s}.header__menu-link:hover{text-decoration:none;color:#3069d5}.header__menu-link:not(:last-child){margin-right:34px}.header .hamburger{position:relative;width:24px;height:24px;z-index:100}.header .hamburger__line{position:absolute;width:100%;height:2px;top:11px;left:0;right:0;background-color:#373938;border-radius:2px;-webkit-transition:all .3s;transition:all .3s}.header .hamburger__line--1,.header .hamburger__line--3{-webkit-transform:translate(0,-7px);transform:translate(0,-7px);-webkit-transition-delay:.1s;transition-delay:.1s}.header .hamburger__line--3{-webkit-transform:translate(0,7px);transform:translate(0,7px)}.header .hamburger.open .hamburger__line--1{-webkit-transform:translate(0,0) rotate(45deg);transform:translate(0,0) rotate(45deg)}.header .hamburger.open .hamburger__line--2{-webkit-transform:scale(0);transform:scale(0)}.header .hamburger.open .hamburger__line--3{-webkit-transform:translate(0,0) rotate(-45deg);transform:translate(0,0) rotate(-45deg)}.header .mob-menu{position:absolute;left:0;top:100%;width:100%;height:calc(100vh - 122px);padding:30px 0;background-color:#fff;z-index:200;opacity:0;visibility:hidden;will-change:transform;-webkit-transform:translate(-105%,0);transform:translate(-105%,0);-webkit-transition:all .3s;transition:all .3s;overflow-y:auto}.header .mob-menu.open{opacity:1;visibility:visible;-webkit-transform:translate(0,0);transform:translate(0,0)}.header .mob-menu__menu-link{display:block;color:#373938;text-align:center;text-transform:uppercase;font-size:20px;letter-spacing:.05em;font-weight:400;-webkit-transition:all .3s;transition:all .3s}.header .mob-menu__menu-link:not(:last-child){margin-bottom:10px}.header .mob-menu__contacts-phone{margin-top:40px;text-align:center}.header .mob-menu__contacts-phone-item{display:block;color:#373938;font-size:22px;font-weight:500;line-height:1}.header .mob-menu__contacts-phone-item:not(:last-child){margin-bottom:7px}.header .mob-menu__social{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;margin-top:60px}.header .mob-menu__social-item{position:relative;width:32px;height:32px;border-radius:50%;margin-right:12px;margin-bottom:12px;background-color:#cecece}.header .mob-menu__social-item:hover .icon{fill:#fff}.header .mob-menu__social-item .icon{position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:18px;height:18px;fill:#eef4f5;-webkit-transition:all .3s;transition:all .3s}@media screen and (min-width:0){.hidden-xs-up{display:none!important}}@media screen and (min-width:576px){.hidden-sm-up{display:none!important}}@media screen and (min-width:768px){.hidden-md-up{display:none!important}}@media screen and (min-width:992px){.hidden-lg-up{display:none!important}}@media screen and (min-width:1200px){.hidden-xl-up{display:none!important}}@media screen and (max-width:1199px){.hidden-xl-down{display:none!important}.header__menu{margin-right:50px}}@media screen and (max-width:991px){.hidden-lg-down{display:none!important}.header__inner{-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:35px 0 39px}.header .lang-toggler{margin-left:auto;margin-right:50px}}@media screen and (max-width:767px){.hidden-md-down{display:none!important}}@media screen and (max-width:575px){.hidden-sm-down{display:none!important}.header .logo{width:90px}}@media screen and (max-width:-1){.hidden-xs-down{display:none!important}}</style>
     <link rel="stylesheet" href="./css/styles.min.css">
   </head>
   <body class="no-js">
@@ -31,7 +31,7 @@
             <div class="col-md-12">
               <div class="header__inner">
                 <div class="logo"><img class="logo-img" src="./images/logo.png" alt="logo"></div>
-                <nav class="header__menu"><a class="header__menu-link" href="#apparea">Область приминения</a><a class="header__menu-link" href="#aiml">AI/ML</a><a class="header__menu-link" href="#blockchain">Blockchain</a><a class="header__menu-link" href="#map">MAP</a><a class="header__menu-link" href="#contacts">Контакты</a>
+                <nav class="header__menu hidden-lg-down"><a class="header__menu-link js_scrolTo" href="#apparea">Область приминения</a><a class="header__menu-link js_scrolTo" href="#aiml">AI/ML</a><a class="header__menu-link js_scrolTo" href="#blockchain">Blockchain</a><a class="header__menu-link js_scrolTo" href="#map">MAP</a><a class="header__menu-link js_scrolTo" href="#contacts">Контакты</a>
                 </nav>
                 <div class="lang-toggler">
                   <div class="lang-toggler__item lang-toggler__item--active"><a class="lang-toggler__item-link" href="#">РУС</a>
@@ -42,6 +42,39 @@
                     </div>
                     <div class="lang-toggler__item"><a class="lang-toggler__item-link" href="#">БЛР</a>
                     </div>
+                  </div>
+                </div>
+                <div class="hamburger js_hamburger hidden-lg-up">
+                  <div class="hamburger__line hamburger__line--1"></div>
+                  <div class="hamburger__line hamburger__line--2"></div>
+                  <div class="hamburger__line hamburger__line--3"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mob-menu">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <div class="mob-menu__inner">
+                  <nav class="mob-menu__menu"><a class="mob-menu__menu-link js_scrolTo" href="#apparea">Область приминения</a><a class="mob-menu__menu-link js_scrolTo" href="#aiml">AI/ML</a><a class="mob-menu__menu-link js_scrolTo" href="#blockchain">Blockchain</a><a class="mob-menu__menu-link js_scrolTo" href="#map">MAP</a><a class="mob-menu__menu-link js_scrolTo" href="#contacts">Контакты</a>
+                  </nav>
+                  <div class="mob-menu__contacts-phone"><a class="mob-menu__contacts-phone-item" href="tel:375 29 6387087">+375 (29) 683-70-87</a><a class="mob-menu__contacts-phone-item" href="tel:375 29 6387087">+375 (29) 683-70-87</a>
+                  </div>
+                  <div class="mob-menu__social"><a class="mob-menu__social-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./images/sprite.svg#i-fb"></use>
+                    </svg></a><a class="mob-menu__social-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./images/sprite.svg#i-vk"></use>
+                    </svg></a><a class="mob-menu__social-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./images/sprite.svg#i-in"></use>
+                    </svg></a><a class="mob-menu__social-item" href="#">
+                    <svg class="icon">
+                      <use xlink:href="./images/sprite.svg#i-google"></use>
+                    </svg></a>
                   </div>
                 </div>
               </div>
@@ -97,7 +130,7 @@
                     <div class="app-area__slider-marker">
                       <h2 class="app-area__title h2">Область применения
                       </h2>
-                      <div class="app-area__slider-marker-list">
+                      <div class="app-area__slider-marker-list hidden-md-down">
                         <div class="app-area__slider-marker-col">
                           <div class="app-area__slider-marker-item active" data-active="0">
                             <div class="app-area__slider-marker-item-text">Энергетика
@@ -142,6 +175,20 @@
                             </div>
                           </div>
                         </div>
+                      </div>
+                      <div class="app-area__slider-marker-list-mob hidden-md-up">
+                        <select class="custom-select">
+                          <option data-active="0">Энергетика</option>
+                          <option data-active="1">Транспортные системы</option>
+                          <option data-active="2">Экология контроль выбросов</option>
+                          <option data-active="3">Умный город</option>
+                          <option data-active="4">Умные парковки</option>
+                          <option data-active="5">Газ и вода</option>
+                          <option data-active="6">Фискализация</option>
+                          <option data-active="7">Учёт налогов</option>
+                          <option data-active="8">Прогнозирование</option>
+                          <option data-active="9">Освещение</option>
+                        </select>
                       </div>
                     </div>
                     <div class="app-area__slider-main">
@@ -277,7 +324,7 @@
                           </div>
                         </div>
                       </div>
-                      <div class="app-area__slider-nav">
+                      <div class="app-area__slider-nav hidden-md-down">
                         <div class="app-area__slider-nav-arrow app-area__slider-nav-arrow--prev">
                         </div>
                         <div class="app-area__slider-nav-arrow app-area__slider-nav-arrow--next">
@@ -304,7 +351,7 @@
                       <div class="aiml__slider-nav-arrow aiml__slider-nav-arrow--next">
                       </div>
                     </div>
-                    <div class="aiml__title-descr">Разметка для искусственного интеллекта
+                    <div class="aiml__title-descr hidden-md-down">Разметка для искусственного интеллекта
                     </div>
                   </div>
                   <div class="aiml__slider js_slider-aiml">
@@ -408,7 +455,7 @@
                   <div class="map__btn">
                     <button class="btn">Подробнее</button>
                   </div>
-                  <div class="map__pic"><img class="map__pic" src="./images/map-pic.png" alt="pic" title=""/>
+                  <div class="map__pic hidden-lg-down"><img class="map__pic" src="./images/map-pic.png" alt="pic" title=""/>
                   </div>
                 </div>
               </div>
@@ -423,13 +470,13 @@
                   <div class="clients__title">
                     <h2 class="clients__title-text h2">Клиенты
                     </h2>
-                    <div class="clients__slider-nav" style="display: none;">
+                    <div class="clients__slider-nav">
                       <div class="clients__slider-nav-arrow clients__slider-nav-arrow--prev">
                       </div>
                       <div class="clients__slider-nav-arrow clients__slider-nav-arrow--next">
                       </div>
                     </div>
-                    <div class="clients__descr">Мы открыты и всегда рады новым знакомствам и сотрудничеству
+                    <div class="clients__descr hidden-lg-down">Мы открыты и всегда рады новым знакомствам и сотрудничеству
                     </div>
                   </div>
                   <div class="clients__slider js_clients-slider">
@@ -531,6 +578,7 @@
         </div>
       </footer>
     </div>
+    <div class="overlay"></div>
     <!-- Модалка Область применения - Энергеткиа-->
     <div class="modal modal-app-area fade" id="modalAppArea-energo">
       <div class="modal-dialog">

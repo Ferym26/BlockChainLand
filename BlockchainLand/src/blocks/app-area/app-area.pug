@@ -10,7 +10,7 @@
 						+e.__slider-marker
 							+e('h2').__title.h2 Область применения
 
-							+e.__slider-marker-list
+							+e.__slider-marker-list.hidden-md-down
 								+e.__slider-marker-col
 									+e.__slider-marker-item(data-active='0').active
 										+e.__slider-marker-item-text Энергетика
@@ -33,6 +33,19 @@
 										+e.__slider-marker-item-text Прогнозирование
 									+e.__slider-marker-item(data-active='9')
 										+e.__slider-marker-item-text Освещение
+
+							+e.__slider-marker-list-mob.hidden-md-up
+								select.custom-select
+									option(data-active='0') Энергетика
+									option(data-active='1') Транспортные системы
+									option(data-active='2') Экология контроль выбросов
+									option(data-active='3') Умный город
+									option(data-active='4') Умные парковки
+									option(data-active='5') Газ и вода
+									option(data-active='6') Фискализация
+									option(data-active='7') Учёт налогов
+									option(data-active='8') Прогнозирование
+									option(data-active='9') Освещение
 						
 						+e.__slider-main
 
@@ -119,6 +132,6 @@
 										+e.__slider-item-btn
 											button.btn.btn--outline(data-toggle="modal" data-target='#modalAppArea-osv') Подробнее
 
-							+e.__slider-nav
+							+e.__slider-nav.hidden-md-down
 								+e.__slider-nav-arrow.--prev
 								+e.__slider-nav-arrow.--next

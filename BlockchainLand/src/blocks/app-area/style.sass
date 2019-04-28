@@ -1,28 +1,68 @@
 .app-area
 	margin-top: 90px
 
+	+media($sm)
+		margin-top: 40px
+
 	&__inner
 		padding-bottom: 100px
 		border-bottom: 1px solid #D3D3D3
 
+		+media($lg)
+			padding: 40px 0 40px 40px
+			border: 15px solid #8DDCF6
+
+		+media($md)
+			padding: 30px 15px
+
+	&__title
+
 	&__slider
 		display: flex
 		justify-content: space-between
+
+		+media($md)
+			flex-direction: column
 
 		&-marker
 			position: relative
 			padding-top: 55px
 			z-index: 20
 
+			+media($lg)
+				margin-right: 35px
+				padding-top: 0
+
+			+media($md)
+				margin-right: 0
+
 			&-list
 				display: flex
 				margin-top: 70px
+
+				+media($lg)
+					flex-direction: column
+
+			&-list-mob
+				margin-top: 40px
 			
 			&-col
 				flex: 0 0 250px
 
+				+media($xl)
+					flex: 0 0 200px
+
+				+media($lg)
+					flex: 0 0 235px
+
 				&:last-child
 					margin-left: 40px
+
+					+media($xl)
+						margin-left: 30px
+
+					+media($lg)
+						margin-left: 0
 
 			&-item
 				position: relative
@@ -30,6 +70,9 @@
 				padding-top: 16px
 				padding-bottom: 16px
 				cursor: pointer
+
+				+media($lg)
+					min-height: 60px
 
 				&:after
 					+pseudo
@@ -59,12 +102,23 @@
 					font-size: 20px
 					line-height: 1.25
 
+					+media($xl)
+						font-size: 18px
+
+					+media($lg)
+						font-size: 16px
+
 		&-nav
 			position: absolute
 			top: 119px	
 			right: 80px
 			display: flex
 			margin-left: 60px
+
+			+media($lg)
+				top: 20px
+				right: 50px
+				margin-left: 0
 
 			&-arrow
 				width: 17px
@@ -89,10 +143,32 @@
 			border-radius: 2px
 			z-index: 10
 
+			+media($xl)
+				width: 530px
+				height: 700px
+
+			+media($lg)
+				width: 335px
+				height: auto
+				border: none
+
+			+media($md)
+				width: 100%
+				margin-top: 30px
+
 		&-item
 			position: relative
 			padding: 117px 85px 145px
 			overflow: hidden
+
+			+media($xl)
+				padding: 80px 60px 50px
+
+			+media($lg)
+				padding: 0 40px 0 0
+
+			+media($sm)
+				padding: 0
 
 			&:before
 				+pseudo
@@ -101,6 +177,9 @@
 				bottom: -69px
 				right: -76px
 				background: url('../images/finger-print.svg') no-repeat 50% 50%
+
+				+media($lg)
+					display: none
 
 			&-wrap
 				position: relative
@@ -114,8 +193,39 @@
 				margin-top: 45px
 				font-size: 32px
 
+				+media($sm)
+					margin-top: 20px
+
 			&-descr
 				margin-top: 23px
 
+				+media($sm)
+					margin-top: 10px
+
 			&-btn
 				margin-top: 62px
+
+				+media($sm)
+					margin-top: 30px
+
+	.jq-selectbox
+
+		&__select
+			height: 54px
+			padding: 0 35px 0 20px
+			border: 1px solid #D3D3D3
+			border-top: 2px solid #FF8900
+
+			&-text
+				line-height: 54px
+
+		&__trigger
+
+			&-arrow
+				top: 15px
+
+		&__dropdown
+
+			ul
+				max-height: auto !important
+				margin-top: 0 !important

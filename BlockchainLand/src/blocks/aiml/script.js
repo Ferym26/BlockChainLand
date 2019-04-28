@@ -11,6 +11,22 @@ BlockChain.sliders.sliderAIML = {
 				autoplaySpeed: 3000,
 				arrows: false,
 				dots: false,
+				responsive: [
+					{
+						breakpoint: 1024,
+						settings: {
+							slidesToShow: 2,
+							slidesToScroll: 1,
+						}
+					}, 
+					{
+						breakpoint: 768,
+						settings: {
+							slidesToShow: 1,
+							slidesToScroll: 1,
+						}
+					}, 
+				]
 			});
 			$(".aiml__slider-nav-arrow--next").on("click", function () {
 				$('.js_slider-aiml').slick("slickNext")

@@ -256,8 +256,10 @@
 		font-size: 14px;
 		letter-spacing: -0.01em;
 
-		a {
-
+		@include media($md) {
+			display: inline;
+			margin-left: 0;
+			padding-left: 10px;
 		}
 	}
 }

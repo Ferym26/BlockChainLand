@@ -27,5 +27,6 @@
 	// }
 
 	$('.custom-checkbox').styler();
+	$('.custom-select').styler();
 
 })();

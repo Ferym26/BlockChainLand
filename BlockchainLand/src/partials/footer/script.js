@@ -11,8 +11,11 @@ BlockChain.UI.footer = {
 			return false;
 		});
 	},
+	
+
 	init: function() {
 		this.scrollTop();
+		
 	}
 }
 

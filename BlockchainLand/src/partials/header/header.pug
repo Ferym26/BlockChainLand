@@ -9,11 +9,44 @@
 					.logo
 						img.logo-img(src="./images/logo.png", alt="logo")
 
-					+e('nav').__menu
-						+e('a').__menu-link(href='#apparea') Область приминения
-						+e('a').__menu-link(href='#aiml') AI/ML
-						+e('a').__menu-link(href='#blockchain') Blockchain
-						+e('a').__menu-link(href='#map') MAP
-						+e('a').__menu-link(href='#contacts') Контакты
+					+e('nav').__menu.hidden-lg-down
+						+e('a').__menu-link.js_scrolTo(href='#apparea') Область приминения
+						+e('a').__menu-link.js_scrolTo(href='#aiml') AI/ML
+						+e('a').__menu-link.js_scrolTo(href='#blockchain') Blockchain
+						+e('a').__menu-link.js_scrolTo(href='#map') MAP
+						+e('a').__menu-link.js_scrolTo(href='#contacts') Контакты
 
 					+lang-toggler()
+
+					.hamburger.js_hamburger.hidden-lg-up
+						.hamburger__line.hamburger__line--1
+						.hamburger__line.hamburger__line--2
+						.hamburger__line.hamburger__line--3
+
+	+b.mob-menu
+		.container
+			.row
+				.col-12
+
+					+e.__inner
+						
+						+e('nav').__menu
+							+e('a').__menu-link.js_scrolTo(href='#apparea') Область приминения
+							+e('a').__menu-link.js_scrolTo(href='#aiml') AI/ML
+							+e('a').__menu-link.js_scrolTo(href='#blockchain') Blockchain
+							+e('a').__menu-link.js_scrolTo(href='#map') MAP
+							+e('a').__menu-link.js_scrolTo(href='#contacts') Контакты
+
+						+e.__contacts-phone
+							+e('a').__contacts-phone-item(href='tel:375 29 6387087') +375 (29) 683-70-87
+							+e('a').__contacts-phone-item(href='tel:375 29 6387087') +375 (29) 683-70-87
+
+						+e.__social
+							+e('a').__social-item(href='#')
+								+icon('i-fb')
+							+e('a').__social-item(href='#')
+								+icon('i-vk')
+							+e('a').__social-item(href='#')
+								+icon('i-in')
+							+e('a').__social-item(href='#')
+								+icon('i-google')

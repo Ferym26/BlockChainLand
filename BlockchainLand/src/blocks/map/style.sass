@@ -3,17 +3,34 @@
 	padding-bottom: 100px
 	border-bottom: 1px solid #D3D3D3
 
+	+media($sm)
+		margin-top: 40px
+		padding-bottom: 40px
+
 	&__inner
 		position: relative
 		padding: 60px 110px 58px
 		background: #F7F7F7
 		border-radius: 2px
 
+		+media($lg)
+			padding: 50px
+
+		+media($md)
+			padding: 40px
+
+
 	&__title
+
+		+media($xl)
+			max-width: 390px
 
 	&__descr
 		max-width: 440px
 		margin-top: 24px
+
+		+media($xl)
+			max-width: 390px
 
 	&__btn
 		margin-top: 42px
@@ -24,3 +41,6 @@
 		right: 59px
 		width: 373px
 		height: 304px
+
+		+media($xl)
+			right: 20px

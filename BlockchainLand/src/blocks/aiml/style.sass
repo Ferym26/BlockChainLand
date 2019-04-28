@@ -2,6 +2,9 @@
 	margin-top: 100px
 	overflow: hidden
 
+	+media($sm)
+		margin-top: 40px
+
 	&__inner
 
 	&__title
@@ -16,10 +19,19 @@
 			margin-right: 113px
 			font-size: 25px
 
+			+media($lg)
+				max-width: 350px
+				margin-right: 0
+				margin-left: auto
+				font-size: 20px
+
 	&__slider
 		position: relative
 		margin: 0 -12px
 		margin-top: 75px
+
+		+media($md)
+			margin-top: 40px
 
 		&:after
 			+pseudo
@@ -29,6 +41,9 @@
 			right: 100%
 			bottom: 0
 			background-color: #fff
+
+			+media($lg)
+				display: none
 
 		&:before
 			+pseudo
@@ -40,9 +55,15 @@
 			background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1))
 			z-index: 10
 
+			+media($lg)
+				display: none
+
 		&-nav
 			display: flex
 			margin-left: 60px
+
+			+media($md)
+				margin-left: auto
 
 			&-arrow
 				width: 17px
@@ -100,3 +121,6 @@
 
 		.slick-list
 			overflow: visible
+
+			+media($lg)
+				overflow: hidden

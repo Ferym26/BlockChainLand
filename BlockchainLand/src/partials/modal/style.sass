@@ -2,13 +2,25 @@
 
 	.modal-dialog
 		max-width: 1095px
-		margin-top: 100px
+		margin-top: 60px
+		padding-left: 20px
+		padding-right: 20px
+
+		+media($sm)
+			padding-left: 0
+			padding-right: 0
 
 	.modal-content
 		border-radius: 2px
 
 	.modal-body
 		padding: 95px
+
+		+media($lg)
+			padding: 50px
+
+		+media($sm)
+			padding: 30px
 
 	.modal-header
 		padding: 0
@@ -55,6 +67,12 @@
 			transform: scale(1.3)
 
 	&__icon
+		width: 148px
+		height: 127px
+
+		+media($sm)
+			width: 100px
+			height: 80px
 
 	&__pic
 		margin-top: 40px
@@ -65,24 +83,42 @@
 		letter-spacing: -0.02em
 		line-height: 1
 
+		+media($lg)
+			margin-top: 30px
+
+		+media($sm)
+			font-size: 30px
+
 	&__descr
 		margin-top: 60px
 		font-size: 25px
 		line-height: 1.3
 
+		+media($lg)
+			margin-top: 30px
+
+		+media($sm)
+			font-size: 20px
+
 	&__list
 		margin-top: 40px
+
+		+media($lg)
+			margin-top: 30px
 
 		&-item
 			position: relative
 			padding-left: 30px
+
+			+media($sm)
+				padding-left: 15px
 
 			&:after
 				+pseudo
 				width: 8px
 				height: 8px
 				left: 0
-				+hcenter
+				top: 8px
 				+circle
 				background-color: $c-main
 
@@ -91,6 +127,9 @@
 
 	&__text
 		margin-top: 40px
+
+		+media($lg)
+			margin-top: 30px
 
 
 	
@@ -111,6 +150,9 @@
 			background: url('../images/finger-print.svg') no-repeat 50% 50%
 			z-index: -5
 
+			+media($sm)
+				display: none
+
 .modal-hero
 
 	.modal-body
@@ -121,11 +163,29 @@
 		padding: 57px 95px 57px 600px
 		background: linear-gradient(39.03deg, #8DDCF6 -48.89%, #EAFAFF 81.62%)
 
+		+media($xl)
+			padding-left: 450px
+
+		+media($lg)
+			margin: -50px -50px 0
+			padding: 50px
+
+		+media($md)
+			padding: 40px
+
+		+media($sm)
+			margin: -30px -30px 0
+			padding: 30px
+
+
 		&-descr
 			margin-top: 30px
 			font-size: 18px
 
 		&-btn
 			margin-top: 40px
+
+			+media($sm)
+				margin-top: 30px
 
 	&__body

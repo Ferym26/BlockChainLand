@@ -2,8 +2,15 @@
 	margin-top: 109px
 	padding-bottom: 133px
 
+	+media($sm)
+		margin-top: 40px
+		padding-bottom: 40px
+
 	&__title
 		display: flex
+
+		+media($lg)
+			align-items: center
 
 	&__descr
 		max-width: 380px
@@ -15,6 +22,9 @@
 	&__slider
 		margin-top: 106px
 
+		+media($sm)
+			margin-top: 50px
+
 		&-item
 
 			&-img
@@ -24,9 +34,12 @@
 			display: flex
 			margin-left: 50px
 
+			+media($lg)
+				display: flex !important
+
 			&-arrow
-				width: 22px
-				height: 22px
+				width: 17px
+				height: 17px
 				border-right: 2px solid #373938
 				border-bottom: 2px solid #373938
 				cursor: pointer
