@@ -1,0 +1,131 @@
+.modal
+
+	.modal-dialog
+		max-width: 1095px
+		margin-top: 100px
+
+	.modal-content
+		border-radius: 2px
+
+	.modal-body
+		padding: 95px
+
+	.modal-header
+		padding: 0
+		border-bottom: none
+
+	.close-popup
+		position: absolute
+		right: 25px
+		top: 25px
+		width: 35px
+		height: 35px
+		background: 0 0
+		border: none
+		cursor: pointer
+		line-height: 1
+		z-index: 10
+		transition: .2s
+		font-size: 0
+		line-height: 0
+
+		&:after
+			content: ''
+			position: absolute
+			display: block
+			width: 25px
+			height: 2px
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%) rotate(45deg)
+			background-color: $c-text
+
+		&:before
+			content: ''
+			position: absolute
+			display: block
+			width: 25px
+			height: 2px
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%) rotate(-45deg)
+			background-color: $c-text
+
+		&:hover
+			transform: scale(1.3)
+
+	&__icon
+
+	&__pic
+		margin-top: 40px
+
+	&__title
+		margin-top: 70px
+		font-size: 46px
+		letter-spacing: -0.02em
+		line-height: 1
+
+	&__descr
+		margin-top: 60px
+		font-size: 25px
+		line-height: 1.3
+
+	&__list
+		margin-top: 40px
+
+		&-item
+			position: relative
+			padding-left: 30px
+
+			&:after
+				+pseudo
+				width: 8px
+				height: 8px
+				left: 0
+				+hcenter
+				+circle
+				background-color: $c-main
+
+			&:not(:last-child)
+				margin-bottom: 10px
+
+	&__text
+		margin-top: 40px
+
+
+	
+	
+.modal-app-area
+
+	.modal-body
+		position: relative
+		border: 15px solid #f4fafd
+		z-index: 5
+
+		&:before
+			+pseudo
+			width: 586px
+			height: 656px
+			bottom: -68px
+			right: -64px
+			background: url('../images/finger-print.svg') no-repeat 50% 50%
+			z-index: -5
+
+.modal-hero
+
+	.modal-body
+
+
+	&__head
+		margin: -95px -95px 0
+		padding: 57px 95px 57px 600px
+		background: linear-gradient(39.03deg, #8DDCF6 -48.89%, #EAFAFF 81.62%)
+
+		&-descr
+			margin-top: 30px
+			font-size: 18px
+
+		&-btn
+			margin-top: 40px
+
+	&__body

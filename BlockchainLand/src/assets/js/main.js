@@ -13,7 +13,8 @@ $document.ready(() => {
 		let init = require('./init.js');
 	
 		// Partials
-		// let partial = require('');
+		let header = require('../../partials/header/script.js');
+		let footer = require('../../partials/footer/script.js');
 	
 		// Components
 	

@@ -23,7 +23,7 @@ module.exports = function (gulp, options, plugins) {
 
 		gulp.watch(options.path.build.html + '*.html').on('change', plugins.browserSync.reload);
 
-		gulp.watch(['./src/images/*.{png,jpg,jpeg,gif,ico,svg,webp}'], gulp.series('imagemin'));
+		gulp.watch(['./src/assets/images/*.{png,jpg,jpeg,gif,ico,svg,webp}'], gulp.series('imagemin'));
 		gulp.watch([options.path.src.sprites + '**/*.svg'], gulp.series('svg'));
 
 		cb();
