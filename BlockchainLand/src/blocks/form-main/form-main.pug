@@ -11,40 +11,59 @@
 						+e.__title-descr Остались вопросы или хочется больше информации? Заполните форму и наши специалисты свяжуться с вами.
 
 					+e.__form
-						form(action="#")
+						form.bv-form(enctype='multipart/form-data', method='POST', action='#', autocomplete='on', novalidate='novalidate')
 
-						.form-group
-							input.form-control#FIELD-NAME(
-									type="text"
-									placeholder='Имя'
-								)
+							.form-group
+								input.form-control#FIELD-NAME(
+										type="text"
+										placeholder='Имя'
+										name='FIELDS[NAME]'
+										data-bv-field='FIELDS[NAME]'
+										data-bv-message='Укажите ваше имя',
+										required
+									)
 
-						.form-group
-							input.form-control#FIELD-MAIL(
-									type="text"
-									placeholder='Email'
-								)
+							.form-group
+								input.form-control(
+										type='email',
+										placeholder='Email'
+										name='FIELDS[EMAIL]',
+										data-bv-field='FIELDS[EMAIL]',
+										data-bv-message='Укажите свой e-mail! На него мы вышлем вам ответ.', 
+										data-bv-emailaddress-message='E-mail введен некорректно',
+										required
+									)
 
-						.form-group.has-error
-							input.form-control#FIELD-PHONE(
-									type="text"
+							.form-group
+								input.form-control(
+									type='tel', 
 									placeholder='Телефон'
+									name='FIELDS[PHONE]',
+									data-inputmask-mask='+7 (999) 999-9999',
+									data-bv-message='Необходимо ввести номер телефона',
+									required
 								)
-							.help-block Поле обязательно для заполнения
 
-						.form-group
-							textarea.form-text(
-								placeholder='Комментарий *'
-							)
+							.form-group
+								textarea.form-text(
+									placeholder='Комментарий *'
+								)
 
-						.form-group.has-error
-							label.custom-checkbox__label
-								input.custom-checkbox(type="checkbox")
-								span.custom-checkbox__text Даю согласие на обработку моих #[a(href="#") персональных данных]*
-							.help-block Поле обязательно для заполнения
+							.form-group
+								label.custom-checkbox__label
+									input.custom-checkbox(
+										type="checkbox"
+										name='FIELDS[ACCEPT]'
+										value='Да'
+										required
+										checked
+										data-bv-message='Необходимо дать согласие'
+										data-bv-field='FIELDS[ACCEPT]'
+									)
+									span.custom-checkbox__text Даю согласие на обработку моих #[a(href="#") персональных данных]*
 
-						+e.__form-footer
-							
-							p * поля обязательны для заполнения
+							+e.__form-footer
+								
+								p * поля обязательны для заполнения
 
-							button.btn Отправить
+								button.btn(type='submit') Отправить

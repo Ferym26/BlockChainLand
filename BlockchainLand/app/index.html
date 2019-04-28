@@ -459,30 +459,29 @@
                     </div>
                   </div>
                   <div class="form-main__form">
-                    <form action="#"></form>
-                    <div class="form-group">
-                      <input class="form-control" id="FIELD-NAME" type="text" placeholder="Имя">
-                    </div>
-                    <div class="form-group">
-                      <input class="form-control" id="FIELD-MAIL" type="text" placeholder="Email">
-                    </div>
-                    <div class="form-group has-error">
-                      <input class="form-control" id="FIELD-PHONE" type="text" placeholder="Телефон">
-                      <div class="help-block">Поле обязательно для заполнения</div>
-                    </div>
-                    <div class="form-group">
-                      <textarea class="form-text" placeholder="Комментарий *"></textarea>
-                    </div>
-                    <div class="form-group has-error">
-                      <label class="custom-checkbox__label">
-                        <input class="custom-checkbox" type="checkbox"><span class="custom-checkbox__text">Даю согласие на обработку моих <a href="#">персональных данных</a>*</span>
-                      </label>
-                      <div class="help-block">Поле обязательно для заполнения</div>
-                    </div>
-                    <div class="form-main__form-footer">
-                      <p>* поля обязательны для заполнения</p>
-                      <button class="btn">Отправить</button>
-                    </div>
+                    <form class="bv-form" enctype="multipart/form-data" method="POST" action="#" autocomplete="on" novalidate="novalidate">
+                      <div class="form-group">
+                        <input class="form-control" id="FIELD-NAME" type="text" placeholder="Имя" name="FIELDS[NAME]" data-bv-field="FIELDS[NAME]" data-bv-message="Укажите ваше имя" required>
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" type="email" placeholder="Email" name="FIELDS[EMAIL]" data-bv-field="FIELDS[EMAIL]" data-bv-message="Укажите свой e-mail! На него мы вышлем вам ответ." data-bv-emailaddress-message="E-mail введен некорректно" required>
+                      </div>
+                      <div class="form-group">
+                        <input class="form-control" type="tel" placeholder="Телефон" name="FIELDS[PHONE]" data-inputmask-mask="+7 (999) 999-9999" data-bv-message="Необходимо ввести номер телефона" required>
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-text" placeholder="Комментарий *"></textarea>
+                      </div>
+                      <div class="form-group">
+                        <label class="custom-checkbox__label">
+                          <input class="custom-checkbox" type="checkbox" name="FIELDS[ACCEPT]" value="Да" required checked data-bv-message="Необходимо дать согласие" data-bv-field="FIELDS[ACCEPT]"><span class="custom-checkbox__text">Даю согласие на обработку моих <a href="#">персональных данных</a>*</span>
+                        </label>
+                      </div>
+                      <div class="form-main__form-footer">
+                        <p>* поля обязательны для заполнения</p>
+                        <button class="btn" type="submit">Отправить</button>
+                      </div>
+                    </form>
                   </div>
                 </div>
               </div>
@@ -877,6 +876,8 @@
     <script src="./js/bootstrap/bootstrap.min.js" defer></script>
     <script src="./js/vendor/slick.min.js" defer></script>
     <script src="./js/vendor/jquery.formstyler.min.js" defer></script>
+    <script src="./js/vendor/bootstrapValidator.min.js" defer></script>
+    <script src="./js/vendor/jquery.inputmask.min.js" defer></script>
     <script src="./js/vendor/svg4everybody.js" defer></script>
     <script src="./js/app.min.js" defer></script>
   </body>
