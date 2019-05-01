@@ -39,3 +39,19 @@ h2,
 		font-size: 38px;
 	}
 }
+
+h3,
+.h3 {
+	font-size: 34px;
+	letter-spacing: -0.02em;
+	font-weight: 300;
+	line-height: 1;
+
+	@include media($xl) {
+		font-size: 28px;
+	}
+
+	@include media($sm) {
+		font-size: 20px;
+	}
+}

@@ -8,11 +8,13 @@
 				.close-popup(data-dismiss="modal" aria-hidden="true") ×
 
 			.modal-body
-				
-				+e.__icon
-					+e('img').__icon-img(src='./images/app-icon_1.svg' alt='icon')
 
-				+e.__title Прогнозирование
+				+e.__title-wrap
+				
+					+e.__icon
+						+e('img').__icon-img(src='./images/app-icon_1.svg' alt='icon')
+
+					+e.__title Прогнозирование
 
 				+e.__descr Блок транзакций — специальная структура для записи группы транзакций в системе Биткойн и аналогичных ей
 

@@ -1,16 +1,21 @@
 @import '../../assets/css/common/components-import';
 
 .header
-	position: relative
+	position: fixed
+	top: 0
+	right: 0
+	left: 0
+	background-color: #fff
+	z-index: 100
 
 	&__inner
 		display: flex
 		align-items: center
-		padding: 45px 0 51px
+		padding: 45px 0 20px
 
 		+media($lg)
 			justify-content: space-between
-			padding: 35px 0 39px
+			padding: 35px 0 20px
 
 	.logo
 		max-width: 139px

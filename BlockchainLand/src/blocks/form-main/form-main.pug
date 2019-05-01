@@ -19,7 +19,7 @@
 										placeholder='Имя *'
 										name='FIELDS[NAME]'
 										data-bv-field='FIELDS[NAME]'
-										data-bv-message='Укажите ваше имя',
+										data-bv-message='Укажите ваше имя'
 										required
 									)
 
@@ -27,10 +27,10 @@
 								input.form-control(
 										type='email',
 										placeholder='Email *'
-										name='FIELDS[EMAIL]',
-										data-bv-field='FIELDS[EMAIL]',
-										data-bv-message='Укажите свой e-mail! На него мы вышлем вам ответ.', 
-										data-bv-emailaddress-message='E-mail введен некорректно',
+										name='FIELDS[EMAIL]'
+										data-bv-field='FIELDS[EMAIL]'
+										data-bv-message='Укажите свой e-mail! На него мы вышлем вам ответ.'
+										data-bv-emailaddress-message='E-mail введен некорректно'
 										required
 									)
 
@@ -38,9 +38,8 @@
 								input.form-control(
 									type='tel', 
 									placeholder='Телефон *'
-									name='FIELDS[PHONE]',
-									data-inputmask-mask='+7 (999) 999-9999',
-									data-bv-message='Необходимо ввести номер телефона',
+									name='phone'
+									data-bv-message='Необходимо ввести номер телефона'
 									required
 								)
 
@@ -60,7 +59,7 @@
 										data-bv-message='Необходимо дать согласие'
 										data-bv-field='FIELDS[ACCEPT]'
 									)
-									span.custom-checkbox__text Даю согласие на обработку моих #[a(href="#") персональных данных]*
+									span.custom-checkbox__text Даю согласие на обработку моих #[a(href="#modalArgee" data-toggle='modal') персональных данных]*
 
 							+e.__form-footer
 								

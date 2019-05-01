@@ -1,10 +1,10 @@
 -
 	var aimlData = [
-		{pic: 'aiml-icon_1.svg', title: 'Обнаружение аномалий'},
-		{pic: 'aiml-icon_2.svg', title: 'Прогнозное техническое обслуживание'},
-		{pic: 'aiml-icon_3.svg', title: 'Выявление мошенничества'},
-		{pic: 'aiml-icon_4.svg', title: 'Анализ паттернов поведения пользователей'},
-		{pic: 'aiml-icon_5.svg', title: 'Пространственно-временное прогнозирование'},
+		{pic: 'aiml-icon_1.svg', title: 'Обнаружение аномалий', target: 'anomaly'},
+		{pic: 'aiml-icon_2.svg', title: 'Прогнозное техническое обслуживание', target: 'service'},
+		{pic: 'aiml-icon_3.svg', title: 'Выявление мошенничества', target: 'fraud'},
+		{pic: 'aiml-icon_4.svg', title: 'Анализ паттернов поведения пользователей', target: 'users'},
+		{pic: 'aiml-icon_5.svg', title: 'Пространственно-временное прогнозирование', target: 'forecasting'},
 	]
 
 +b.aiml#aiml
@@ -26,7 +26,7 @@
 						each item in aimlData
 
 							+e.__slider-item
-								+e.__slider-item-wrap
+								+e.__slider-item-wrap(data-toggle='modal' data-target=`#modalAIML-${item.target}`)
 									+e.__slider-pic
 										+e('img').__slider-pic-img(src=`./images/${item.pic}` alt='icon')
 									+e.__slider-title= item.title

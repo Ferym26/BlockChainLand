@@ -1,9 +1,12 @@
 BlockChain.form = {
 
 	formValidation: function() {
-		$('.bv-form').bootstrapValidator();
+
+		$('.bv-form').bootstrapValidator({});
 
 		Inputmask({
+			mask: '+9{1,3}(9{1,4})9{5,12}',
+			greedy: false,
 			oncomplete: function() {
 				$('.bv-form').data('bootstrapValidator').updateStatus($(this).attr('name'), 'VALID', null);
 			},
