@@ -62,10 +62,8 @@ BlockChain.sliders.sliderAppArea = {
 			});
 		});
 
-		markers.on('click', function () {
-			markers.removeClass('active');
-			$(this).addClass('active');
-			$('.js_slider-arr-area').slick('slickGoTo', $(this).data('active'));
+		$($('.custom-select')[0]).change(function () {
+			$('.js_slider-arr-area').slick('slickGoTo', $(this).find('li.selected').data('active'));
 		})
 	},
 
