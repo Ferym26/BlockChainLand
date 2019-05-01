@@ -3,9 +3,11 @@ BlockChain.UI.header = {
 		let hamburger = $('.js_hamburger');
 		// let overlay = $('.overlay');
 		let mobMenu = $('.mob-menu');
+		let windowHeight = $(window).height();
 		$(".js_scrolTo").click(function() {
+			let elemHeight = $($(this).attr("href")).height();
 			$("html, body").animate({
-				scrollTop: $($(this).attr("href")).offset().top - 150
+				scrollTop: $($(this).attr("href")).offset().top - 50 - ((windowHeight / 2) - (elemHeight / 2))
 			}, {
 				duration: 1000,
 				easing: "swing"

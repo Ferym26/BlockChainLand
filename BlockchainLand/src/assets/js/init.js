@@ -46,4 +46,23 @@
 	// 	return false;
 	// });
 
+	let appArea = new TimelineMax({paused: true});
+
+	var anim_appArea = appArea
+		.from('.app-area', 1, {
+			y: 50
+		}, '-=0.2')
+		.staggerFrom(".app-area__slider-marker-item", 0.8, {
+			y: -100,
+			ease: Expo.easeOut,
+			delay: 0,
+			opacity: 0
+		}, 0.15);
+
+	$(".app-area").waypoint(function () {
+		anim_appArea.resume();
+	}, {
+		offset: '65%'
+	});
+
 })();

@@ -1,4 +1,8 @@
-<svg width="41" height="14" viewBox="0 0 41 14" xmlns="http://www.w3.org/2000/svg">
-	<path d="M33 1L39 7L33 13" stroke="#373938" stroke-width="2"/>
-	<path d="M38 7L0 7" stroke="#373938" stroke-width="2"/>
+<svg xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg"
+	xmlns="http://www.w3.org/2000/svg" height="148.284" width="483.284" id="svg4" xml:space="preserve"
+	viewBox="0 0 483.284 148.284" y="0px" x="0px" version="1.1">
+
+	<polygon transform="translate(0,-167.5)" id="polygon2"
+		points="406.716,221.642 0,221.642 0,261.642 406.716,261.642 380.857,287.5 409.143,315.784 483.284,241.642 409.143,167.5 380.857,195.784 " />
 </svg>

@@ -196,7 +196,28 @@
                       <div class="app-area__slider-main-wrap js_slider-arr-area">
                         <div class="app-area__slider-item">
                           <div class="app-area__slider-item-wrap">
-                            <div class="app-area__slider-item-pic"><img src="./images/app-icon_1.svg" alt="pic">
+                            <div class="app-area__slider-item-pic">
+                              <svg width="106" height="123" viewBox="0 0 106 123" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M41 16L40.2 15.4L40 15.6667V16H41ZM41 56L41.9487 56.3162L42 56.1623V56H41ZM20.0513 115.684C19.8767 116.208 20.1598 116.774 20.6838 116.949C21.2077 117.123 21.774 116.84 21.9487 116.316L20.0513 115.684ZM65 16H66V15.6667L65.8 15.4L65 16ZM65 56H64V56.1623L64.0513 56.3162L65 56ZM84.0513 116.316C84.226 116.84 84.7923 117.123 85.3162 116.949C85.8402 116.774 86.1233 116.208 85.9487 115.684L84.0513 116.316ZM51.4 2.13333L50.6 1.53333L51.4 2.13333ZM50.6 1.53333L40.2 15.4L41.8 16.6L52.2 2.73333L50.6 1.53333ZM40 16V56H42V16H40ZM40.0513 55.6838L20.0513 115.684L21.9487 116.316L41.9487 56.3162L40.0513 55.6838ZM53.8 2.73333L64.2 16.6L65.8 15.4L55.4 1.53333L53.8 2.73333ZM64 16V56H66V16H64ZM64.0513 56.3162L84.0513 116.316L85.9487 115.684L65.9487 55.6838L64.0513 56.3162ZM52.2 2.73333C52.6 2.2 53.4 2.2 53.8 2.73333L55.4 1.53333C54.2 -0.0666666 51.8 -0.0666666 50.6 1.53333L52.2 2.73333Z" fill="#FF8900"></path>
+                                <path d="M41 16H56" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M41 30H56" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M41.5 43H55.5" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M41.5 56H55.5" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M41 30H6.88424C5.75838 30 5.49124 28.4281 6.55389 28.0561L36 17.75" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M65 16L99.4461 28.0561C100.509 28.4281 100.242 30 99.1158 30H71" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M1 34.5H11" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M41 56H6.88424C5.75838 56 5.49124 54.4281 6.55389 54.0561L36 43.75" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M1 60.5H11" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M95 34.5H105" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M65 42L99.4461 54.0561C100.509 54.4281 100.242 56 99.1158 56H71" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M95 60.5H105" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M38.5 64L76 88.5" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M32 82.5L85 116" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M53 73.5L41 82" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M67 63L58.5 69" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M71 85L59 93.5" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                                <path d="M37.5 109L54.5 97.0281M16 122V121C16 118.239 18.2386 116 21 116H85C87.7614 116 90 118.239 90 121V122" stroke="#FF8900" stroke-width="2" stroke-linecap="round"></path>
+                              </svg>
                             </div>
                             <div class="app-area__slider-item-title">Энергетика
                             </div>
@@ -454,9 +475,7 @@
                   <div class="map__descr">Интеллектуальное картографирование интеллектуальное программное обеспечение
                   </div>
                   <div class="map__btn">
-                    <button class="btn">Подробнее</button>
-                  </div>
-                  <div class="map__pic hidden-lg-down"><img class="map__pic" src="./images/map-pic.png" alt="pic" title=""/>
+                    <button class="btn" data-toggle="modal" data-target="#modalHeroMap">Подробнее</button>
                   </div>
                 </div>
               </div>
@@ -1065,8 +1084,48 @@
             <div class="close-popup" data-dismiss="modal" aria-hidden="true">×</div>
           </div>
           <div class="modal-body">
-            <div class="modal-hero__head">
+            <div class="modal-hero__head modal-hero__head--right">
               <h2 class="modal__h2">Blockchain
+              </h2>
+              <div class="modal-hero__head-descr">Интеллектуальное картографирование - это интеллектуальное программное</div>
+              <div class="modal-hero__head-btn">
+                <button class="btn" data-dismiss="modal" aria-label="Close">Свернуть</button>
+              </div>
+            </div>
+            <div class="modal-hero__body">
+              <div class="modal__descr">Блок транзакций — специальная структура для записи группы транзакций в системе Биткойн и аналогичных ей
+              </div>
+              <div class="modal__text">Блок состоит из заголовка и списка транзакций. Заголовок блока включает в себя свой хеш, хеш предыдущего блока, хеши транзакций и дополнительную служебную информацию. В системе Биткойн первой транзакцией в блоке всегда указывается получение комиссии, которая станет наградой майнеру за созданный блок[5]. Далее идёт список транзакций, сформированный из очереди транзакций, ещё не записанных в предыдущие блоки.
+              </div>
+              <ul class="modal__list">
+                <li class="modal__list-item">Блок состоит из заголовка и списка транзакций
+                </li>
+                <li class="modal__list-item">Заголовок блока включает в себя свой хеш
+                </li>
+                <li class="modal__list-item">Далее идёт список транзакций
+                </li>
+              </ul>
+              <div class="modal__text">Далее идёт список транзакций, сформированный из очереди транзакций, ещё не записанных в предыдущие блоки.
+              </div>
+              <div class="modal__pic"><img class="modal__pic-img" src="./images/chains.jpg" alt="pic" title=""/>
+              </div>
+              <div class="modal__text">Далее идёт список транзакций, сформированный из очереди транзакций, ещё не записанных в предыдущие блоки.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Модалка Map-->
+    <div class="modal modal-hero fade" id="modalHeroMap">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <div class="close-popup" data-dismiss="modal" aria-hidden="true">×</div>
+          </div>
+          <div class="modal-body">
+            <div class="modal-hero__head modal-hero__head--left">
+              <h2 class="modal__h2">Map
               </h2>
               <div class="modal-hero__head-descr">Интеллектуальное картографирование - это интеллектуальное программное</div>
               <div class="modal-hero__head-btn">
@@ -1127,6 +1186,8 @@
     <script src="./js/vendor/jquery.formstyler.min.js" defer></script>
     <script src="./js/vendor/bootstrapValidator.min.js" defer></script>
     <script src="./js/vendor/jquery.inputmask.min.js" defer></script>
+    <script src="./js/vendor/jquery.waypoints.min.js" defer></script>
+    <script src="./js/vendor/TweenMax.min.js" defer></script>
     <script src="./js/vendor/svg4everybody.js" defer></script>
     <script src="./js/app.min.js" defer></script>
   </body>

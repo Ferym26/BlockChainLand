@@ -77,6 +77,9 @@
 				&:hover
 					border-color: $c-accent
 
+				&:active
+					border-color: $c-main
+
 				&--prev
 					margin-right: 18px
 					transform: rotate(135deg)
@@ -100,6 +103,11 @@
 
 				.aiml__slider-title
 					color: $c-accent
+
+				.aiml__slider-icon
+
+					.icon
+						fill: $c-accent
 
 			&-wrap
 				display: flex
@@ -132,7 +140,8 @@
 			height: 12px
 
 			.icon
-				fill: $trp
+				fill: #373938
+				+transish
 
 		.slick-list
 			overflow: visible
