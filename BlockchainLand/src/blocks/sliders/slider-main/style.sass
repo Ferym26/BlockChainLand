@@ -125,6 +125,7 @@
 		font-size: 0
 		line-height: 0
 		z-index: 20
+		+transish
 
 		+media($lg)
 			width: 22px
@@ -132,6 +133,9 @@
 
 		+media($md)
 			display: none !important
+
+		&:hover
+			border-color: $c-accent
 
 		&:before
 			display: none

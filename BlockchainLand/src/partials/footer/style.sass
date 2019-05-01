@@ -12,7 +12,7 @@
 		max-width: 1312px
 		margin: 0 auto
 		padding: 79px 64px 0
-		background: #EEF4F5
+		background: #F7F7F7
 
 		+media($lg)
 			padding: 60px 50px 0
@@ -72,6 +72,14 @@
 			display: block
 			font-weight: 400
 			color: $c-text
+			+transish
+
+			&:hover
+				text-decoration: none
+				color: $c-accent
+
+			&:active
+				color: $c-main
 
 			&:not(:last-child)
 				margin-bottom: 12px
@@ -103,9 +111,14 @@
 				font-size: 25px
 				font-weight: 500
 				line-height: 1
+				+transish
 
 				+media($lg)
 					font-size: 22px
+
+				&:hover
+					text-decoration: none
+					color: #1b3465
 
 				&:not(:last-child)
 					margin-bottom: 7px
@@ -148,12 +161,11 @@
 			+circle
 			margin-right: 12px
 			margin-bottom: 12px
-			background-color: #CECECE
+			+transish
 
 			&:hover
 
-				.icon
-					fill: #fff
+				
 
 			.icon
 				position: absolute
@@ -163,6 +175,15 @@
 				fill: #EEF4F5
 				+transish
 
+			&--fb
+				background-color: #38539B
+
+			&--tw
+				background-color: #1C9DEB
+
+			&--in
+				background-color: #000
+
 	&__copyright
 
 	&__to-top
@@ -171,6 +192,8 @@
 		color: #707070
 		cursor: pointer
 
+		&:hover
+
 		.icon
 			position: absolute
 			left: 0
@@ -178,3 +201,4 @@
 			width: 17px
 			height: 8px
 			fill: $trp
+			+transish

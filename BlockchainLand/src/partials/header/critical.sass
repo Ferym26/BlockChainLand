@@ -23,11 +23,11 @@
 
 	&__menu
 		display: flex
-		margin-left: auto
-		margin-right: 150px
+		margin-left: 180px
+		margin-right: auto
 
 		+media($xl)
-			margin-right: 50px
+			margin-left: 50px
 
 		&-link
 			display: block
@@ -40,6 +40,9 @@
 
 			&:hover
 				text-decoration: none
+				color: $c-accent
+
+			&:active
 				color: $c-main
 
 			&:not(:last-child)
