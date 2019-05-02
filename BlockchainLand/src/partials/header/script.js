@@ -4,14 +4,28 @@ BlockChain.UI.header = {
 		// let overlay = $('.overlay');
 		let mobMenu = $('.mob-menu');
 		let windowHeight = $(window).height();
+		
 		$(".js_scrolTo").click(function() {
 			let elemHeight = $($(this).attr("href")).height();
-			$("html, body").animate({
-				scrollTop: $($(this).attr("href")).offset().top - 65 - ((windowHeight / 2) - (elemHeight / 2))
-			}, {
-				duration: 1000,
-				easing: "swing"
-			});
+			let lochash = window.location.hash;
+			console.log(lochash);
+			if ($(this).attr("href") == '#apparea') {
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top - 100 - ((windowHeight / 2) - (elemHeight / 2))
+				}, {
+					duration: 1000,
+					easing: "swing"
+				});
+			}
+			else {
+				$("html, body").animate({
+					scrollTop: $($(this).attr("href")).offset().top - 55 - ((windowHeight / 2) - (elemHeight / 2))
+				}, {
+					duration: 1000,
+					easing: "swing"
+				});
+			}
+			
 
 			setTimeout(function() {
 				$('body').removeClass('open-mob');

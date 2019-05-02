@@ -50,6 +50,10 @@
 		let appArea = new TimelineMax({paused: true});
 		let anim_appArea = appArea
 			.addLabel("start", "+=0")
+			.from('.app-area__title', 0.6, {
+				x: -150,
+				opacity: 0
+			})
 			.staggerFrom(".app-area__slider-marker-item", 0.8, {
 				y: 80,
 				ease: Expo.easeOut,
@@ -62,16 +66,15 @@
 			}, "start+=0.7")
 			.from('.icon-energo .inner', 0.3, {
 				opacity: 0
-			}, "start+=1")
+			}, "start+=1.2")
 			.from('.icon-energo .frame1', 0.3, {
 				y: 20,
 				opacity: 0
-			}, "start+=1.3")
+			}, "start+=1.4")
 			.from('.icon-energo .frame2', 0.3, {
 				y: 20,
 				opacity: 0
-			}, "start+=1.6")
-
+			}, "start+=1.7");
 		$(".app-area").waypoint(function () {
 			anim_appArea.resume();
 		}, {
@@ -80,19 +83,32 @@
 	
 		let aiml = new TimelineMax({paused: true});
 		let anim_aiml = aiml
-			.staggerFrom(".aiml__slider-item", 0.6, {
+			.from('.aiml__title-text', 0.6, {
+				x: -200,
 				opacity: 0
-			}, 0.2);
+			})
+			.from('.aiml__slider-nav', 0.6, {
+				x: -200,
+				opacity: 0
+			}, '-=0.6')
+			.from('.aiml__title-descr', 0.6, {
+				x: 200,
+				opacity: 0
+			}, '-=0.6')
+			.from(".aiml__slider", 1, {
+				x: 200,
+				opacity: 0
+			});
 		$(".aiml").waypoint(function () {
 			anim_aiml.resume();
 		}, {
-			offset: '82%'
+			offset: '85%'
 		});
 	
 		let blockchain = new TimelineMax({paused: true});
 		let anim_blockchain = blockchain
-			.from(".blockchain", 1.2, {
-				x: 300,
+			.from(".blockchain", 1.7, {
+				x: -300,
 				ease: Expo.easeOut,
 				delay: 0,
 				opacity: 0
@@ -106,8 +122,8 @@
 	
 		let map = new TimelineMax({paused: true});
 		let anim_map = map
-			.from(".map", 1.2, {
-				x: -300,
+			.from(".map", 1.7, {
+				x: 300,
 				ease: Expo.easeOut,
 				delay: 0,
 				opacity: 0
@@ -115,6 +131,23 @@
 	
 		$(".map").waypoint(function () {
 			anim_map.resume();
+		}, {
+			offset: '85%'
+		});
+	
+		let clients = new TimelineMax({paused: true});
+		let anim_clients = clients
+			.from(".clients__title-text", .6, {
+				x: -200,
+				opacity: 0
+			})
+			.from(".clients__descr", .6, {
+				x: 200,
+				opacity: 0
+			}, '-=0.6');
+	
+		$(".clients").waypoint(function () {
+			anim_clients.resume();
 		}, {
 			offset: '85%'
 		});
