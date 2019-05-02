@@ -51,7 +51,7 @@
 		let anim_appArea = appArea
 			.addLabel("start", "+=0")
 			.from('.app-area__title', 0.6, {
-				x: -150,
+				x: -400,
 				opacity: 0
 			})
 			.staggerFrom(".app-area__slider-marker-item", 0.8, {
@@ -84,11 +84,11 @@
 		let aiml = new TimelineMax({paused: true});
 		let anim_aiml = aiml
 			.from('.aiml__title-text', 0.6, {
-				x: -200,
+				x: -400,
 				opacity: 0
 			})
 			.from('.aiml__slider-nav', 0.6, {
-				x: -200,
+				x: -400,
 				opacity: 0
 			}, '-=0.6')
 			.from('.aiml__title-descr', 0.6, {
@@ -138,7 +138,7 @@
 		let clients = new TimelineMax({paused: true});
 		let anim_clients = clients
 			.from(".clients__title-text", .6, {
-				x: -200,
+				x: -400,
 				opacity: 0
 			})
 			.from(".clients__descr", .6, {
