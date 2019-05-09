@@ -84,18 +84,18 @@
 		let appAreaIcon2 = new TimelineMax({paused: true});
 		let anim_appAreaIcon2 = appAreaIcon2
 			.addLabel("start", "+=0")
-			.from('.icon-ts .train', 0.6, {
+			.from('.app-area__slider-item .icon-ts .train', 0.6, {
 				opacity: 0,
 				delay: 0.3,
 				x: -50
 			})
-			.from('.icon-ts .train', 1, {
+			.from('.app-area__slider-item .icon-ts .train', 1, {
 				repeat: -1,
 				yoyo: true,
 				y: -4,
 				ease: Elastic.easeOut.config(1, 0.5),
 			})
-			.from('.icon-ts .clowds', 2, {
+			.from('.app-area__slider-item .icon-ts .clowds', 2, {
 				opacity: 0,
 				x: -50,
 				ease: Power2.easeOut,
@@ -104,7 +104,7 @@
 		let appAreaIcon3 = new TimelineMax({paused: true});
 		let anim_appAreaIcon3 = appAreaIcon3
 			.addLabel("start", "+=0")
-			.from('.icon-eco .globus', 0.9, {
+			.from('.app-area__slider-item .icon-eco .globus', 0.9, {
 				opacity: 0,
 				delay: 0.3,
 				y: 80,
@@ -115,11 +115,11 @@
 		let appAreaIcon4 = new TimelineMax({paused: true});
 		let anim_appAreaIcon4 = appAreaIcon4
 			.addLabel("start", "+=0")
-			.staggerFrom('.icon-city .windows path', 0.5, {
+			.staggerFrom('.app-area__slider-item .icon-city .windows path', 0.5, {
 				delay: 0.3,
 				opacity: 0
 			}, 0.1)
-			.staggerFrom('.icon-city .roots path', 0.5, {
+			.staggerFrom('.app-area__slider-item .icon-city .roots path', 0.5, {
 				strokeDasharray: 1e3,
 				strokeDashoffset: 1e3,
 				ease: Expo.easeIn
@@ -128,7 +128,7 @@
 		let appAreaIcon5 = new TimelineMax({paused: true});
 		let anim_appAreaIcon5 = appAreaIcon5
 			.addLabel("start", "+=0")
-			.staggerFrom('.icon-parking .waves path', 1.4, {
+			.staggerFrom('.app-area__slider-item .icon-parking .waves path', 1.4, {
 				delay: 0.3,
 				y: 10,
 				opacity: 0,
@@ -138,27 +138,27 @@
 		let appAreaIcon6 = new TimelineMax({paused: true});
 		let anim_appAreaIcon6 = appAreaIcon6
 			.addLabel("start", "+=0")
-			.staggerFrom('.icon-gaz .col1 rect', 0.6, {
+			.staggerFrom('.app-area__slider-item .icon-gaz .col1 rect', 0.6, {
 				delay: 0.3,
 				opacity: 0,
 			}, 0.15)
-			.staggerFrom('.icon-gaz .col2 rect', 0.6, {
+			.staggerFrom('.app-area__slider-item .icon-gaz .col2 rect', 0.6, {
 				opacity: 0,
 			}, 0.1)
-			.staggerFrom('.icon-gaz .col3 rect', 0.8, {
+			.staggerFrom('.app-area__slider-item .icon-gaz .col3 rect', 0.8, {
 				opacity: 0,
 			}, 0.08)
 		
 		let appAreaIcon7 = new TimelineMax({paused: true});
 		let anim_appAreaIcon7 = appAreaIcon7
 			.addLabel("start", "+=0")
-			.staggerFrom('.icon-fisk .body path', 0.5, {
+			.staggerFrom('.app-area__slider-item .icon-fisk .body path', 0.5, {
 				delay: 0.3,
 				strokeDasharray: 200,
 				strokeDashoffset: 200,
 				ease: Expo.easeIn
 			}, 0.3)
-			.from('.icon-fisk .lighter', 0.5, {
+			.from('.app-area__slider-item .icon-fisk .lighter', 0.5, {
 				opacity: 0,
 				repeat: -1,
 				yoyo: true
@@ -167,7 +167,7 @@
 		let appAreaIcon8 = new TimelineMax({paused: true});
 		let anim_appAreaIcon8 = appAreaIcon8
 			.addLabel("start", "+=0")
-			.from('.icon-tax .lens', 1.6, {
+			.from('.app-area__slider-item .icon-tax .lens', 1.6, {
 				delay: 0.3,
 				rotation: -30,
 				repeat: -1,
@@ -178,7 +178,7 @@
 		let appAreaIcon9 = new TimelineMax({paused: true});
 		let anim_appAreaIcon9 = appAreaIcon9
 			.addLabel("start", "+=0")
-			.fromTo('.icon-prognoz .pipe', 1, {
+			.fromTo('.app-area__slider-item .icon-prognoz .pipe', 1, {
 				delay: 0.3,
 				scaleX: 1.2,
 				transformOrigin: "50% 50%",
@@ -191,7 +191,7 @@
 				repeat: -1,
 				yoyo: true,
 			})
-			.to('.icon-prognoz .arrow', 1, {
+			.to('.app-area__slider-item .icon-prognoz .arrow', 1, {
 				transformOrigin: "9.305px 9.005px",
 				rotation: 75,
 				repeat: -1,
@@ -201,7 +201,7 @@
 		let appAreaIcon10 = new TimelineMax({paused: true});
 		let anim_appAreaIcon10 = appAreaIcon10
 			.addLabel("start", "+=0")
-			.staggerTo('.icon-osv .gbuttons rect', 1, {
+			.staggerTo('.app-area__slider-item .icon-osv .gbuttons rect', 1, {
 				delay: 0.3,
 				y: 2,
 				scaleX: 0.85,
@@ -209,7 +209,7 @@
 				repeat: -1,
 				yoyo: true,
 			}, 0.5)
-			.from('.icon-osv .gcheck', 2, {
+			.from('.app-area__slider-item .icon-osv .gcheck', 2, {
 				strokeDasharray: 200,
 				strokeDashoffset: 200,
 				repeat: -1,
