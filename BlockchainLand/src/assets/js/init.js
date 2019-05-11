@@ -138,47 +138,7 @@
 		let appAreaIcon6 = new TimelineMax({paused: true});
 		let anim_appAreaIcon6 = appAreaIcon6
 			.addLabel("start", "+=0")
-			.staggerFrom('.app-area__slider-item .icon-gaz .col1 rect', 0.6, {
-				delay: 0.3,
-				opacity: 0,
-			}, 0.15)
-			.staggerFrom('.app-area__slider-item .icon-gaz .col2 rect', 0.6, {
-				opacity: 0,
-			}, 0.1)
-			.staggerFrom('.app-area__slider-item .icon-gaz .col3 rect', 0.8, {
-				opacity: 0,
-			}, 0.08)
-		
-		let appAreaIcon7 = new TimelineMax({paused: true});
-		let anim_appAreaIcon7 = appAreaIcon7
-			.addLabel("start", "+=0")
-			.staggerFrom('.app-area__slider-item .icon-fisk .body path', 0.5, {
-				delay: 0.3,
-				strokeDasharray: 200,
-				strokeDashoffset: 200,
-				ease: Expo.easeIn
-			}, 0.3)
-			.from('.app-area__slider-item .icon-fisk .lighter', 0.5, {
-				opacity: 0,
-				repeat: -1,
-				yoyo: true
-			})
-		
-		let appAreaIcon8 = new TimelineMax({paused: true});
-		let anim_appAreaIcon8 = appAreaIcon8
-			.addLabel("start", "+=0")
-			.from('.app-area__slider-item .icon-tax .lens', 1.6, {
-				delay: 0.3,
-				rotation: -30,
-				repeat: -1,
-				yoyo: true,
-				transformOrigin: "35.65px 35.65px",
-			})
-		
-		let appAreaIcon9 = new TimelineMax({paused: true});
-		let anim_appAreaIcon9 = appAreaIcon9
-			.addLabel("start", "+=0")
-			.fromTo('.app-area__slider-item .icon-prognoz .pipe', 1, {
+			.fromTo('.app-area__slider-item .icon-gaz .pipe', 1, {
 				delay: 0.3,
 				scaleX: 1.2,
 				transformOrigin: "50% 50%",
@@ -191,17 +151,17 @@
 				repeat: -1,
 				yoyo: true,
 			})
-			.to('.app-area__slider-item .icon-prognoz .arrow', 1, {
+			.to('.app-area__slider-item .icon-gaz .arrow', 1, {
 				transformOrigin: "9.305px 9.005px",
 				rotation: 75,
 				repeat: -1,
 				yoyo: true,
 			}, "start+=0")
-		
-		let appAreaIcon10 = new TimelineMax({paused: true});
-		let anim_appAreaIcon10 = appAreaIcon10
+
+		let appAreaIcon7 = new TimelineMax({paused: true});
+		let anim_appAreaIcon7 = appAreaIcon7
 			.addLabel("start", "+=0")
-			.staggerTo('.app-area__slider-item .icon-osv .gbuttons rect', 1, {
+			.staggerTo('.app-area__slider-item .icon-fisk .gbuttons rect', 1, {
 				delay: 0.3,
 				y: 2,
 				scaleX: 0.85,
@@ -209,11 +169,51 @@
 				repeat: -1,
 				yoyo: true,
 			}, 0.5)
-			.from('.app-area__slider-item .icon-osv .gcheck', 2, {
+			.from('.app-area__slider-item .icon-fisk .gcheck', 2, {
 				strokeDasharray: 200,
 				strokeDashoffset: 200,
 				repeat: -1,
 			}, "start+=1")
+
+		let appAreaIcon8 = new TimelineMax({paused: true});
+		let anim_appAreaIcon8 = appAreaIcon8
+			.addLabel("start", "+=0")
+			.staggerFrom('.app-area__slider-item .icon-tax .col1 rect', 0.6, {
+				delay: 0.3,
+				opacity: 0,
+			}, 0.15)
+			.staggerFrom('.app-area__slider-item .icon-tax .col2 rect', 0.6, {
+				opacity: 0,
+			}, 0.1)
+			.staggerFrom('.app-area__slider-item .icon-tax .col3 rect', 0.8, {
+				opacity: 0,
+			}, 0.08);
+
+		let appAreaIcon9 = new TimelineMax({paused: true});
+		let anim_appAreaIcon9 = appAreaIcon9
+			.addLabel("start", "+=0")
+			.from('.app-area__slider-item .icon-prognoz .lens', 1.6, {
+				delay: 0.3,
+				rotation: -30,
+				repeat: -1,
+				yoyo: true,
+				transformOrigin: "35.65px 35.65px",
+			});
+
+		let appAreaIcon10 = new TimelineMax({paused: true});
+		let anim_appAreaIcon10 = appAreaIcon10
+			.addLabel("start", "+=0")
+			.staggerFrom('.app-area__slider-item .icon-osv .body path', 0.5, {
+				delay: 0.3,
+				strokeDasharray: 200,
+				strokeDashoffset: 200,
+				ease: Expo.easeIn
+			}, 0.3)
+			.from('.app-area__slider-item .icon-osv .lighter', 0.5, {
+				opacity: 0,
+				repeat: -1,
+				yoyo: true
+			});
 		
 		// Запуск анимаций иконок при листании слайдера
 		$('.js_slider-arr-area').on('afterChange', function (event, slick, currentSlide, nextSlide) {

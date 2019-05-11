@@ -31,25 +31,33 @@
 			margin-bottom: 0
 
 	&__item
-		background: #F7F7F7
+		background: linear-gradient(26deg, #fff ,#fff, rgba(64,191,245,0.1),rgba(64,191,245,0.25))
 		border-radius: 2px
 
 		&-inner
 			display: flex
 			justify-content: space-between
+			align-items: center
 			height: 610px
-			padding: 142px 110px 50px
+			padding: 50px 0px 50px 100px
 
 			+media(1600px)
 				height: 500px
 
 			+media($lg)
 				height: 392px
-				padding: 105px 60px 30px
+				padding: 30px 0px 30px 60px
 
 			+media($md)
 				padding: 50px 30px 30px
 
+			+media($sm)
+				flex-direction: column
+				align-items: flex-start
+		
+		&-text
+			// margin: 142px 50px 50px 110px
+		
 		&-title
 
 			+media($lg)
@@ -57,15 +65,23 @@
 
 			+media($sm)
 				font-size: 42px
+				line-height: 1
 
 		&-descr
+			max-width: 300px
 			margin-top: 17px
 			font-size: 25px
 
 			+media($lg)
 				font-size: 20px
 
+			+media($sm)
+				margin-top: 5px
+
 		&-pic
+			display: flex
+			justify-content: center
+			align-items: center
 
 		&-img
 
@@ -87,13 +103,17 @@
 	.slick-dots
 		width: auto
 		left: 100px
-		bottom: 113px
+		bottom: 50px
 
 		+media($lg)
 			bottom: 60px
 
 		+media($md)
 			left: 30px
+
+		+media($sm)
+			bottom: 20px
+			left: 20px
 
 		li
 			width: auto
@@ -157,4 +177,21 @@
 
 		+media($lg)
 			left: 15px
-
+	
+	// .brain-pic
+	// 	display: flex
+	// 	min-width: 130%
+	// 	min-height: 100%
+	// 	transform: translate(-67px,0px)
+	
+	// .blockchain-pic
+	// 	display: flex
+	// 	width: 80%
+	// 	min-height: 100%
+	// 	transform: translate(-30px,30px)
+	
+	// .map-pic
+	// 	display: flex
+	// 	min-width: 100%
+	// 	min-height: 100%
+	// 	transform: translate(-6px,0px)

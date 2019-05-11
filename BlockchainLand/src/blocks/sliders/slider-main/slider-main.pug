@@ -2,19 +2,39 @@
 
 	+e.__wrap.js_slider-main
 
-		- var i = 0
-		while i < 3
-			- i++
-			
-			+e.__item
-				+e.__item-inner
-					
-					+e.__item-text
-						+e('h1').__item-title.h1 BlockChain
-						+e.__item-descr Сбор, хранение и анализ данных
-					
-					//- +e.__item-pic
-						+e('img').__item-img(src='./images/slider-main_1.svg')
+		+e.__item
+			+e.__item-inner
+				+e.__item-text
+					+e('h1').__item-title.h1 AI/ML
+					+e.__item-descr Разметка для искусственного интеллекта
+				+e.__item-pic.brain-pic
+					picture
+						source(srcset='./images/brain.svg' media='(min-width: 1024px)')
+						source(srcset='./images/brain_md.svg' media='(min-width: 768px) and (max-width: 1023px)')
+						source(srcset='./images/brain_sm.svg' media='(max-width: 767px)')
+						+e('img').__item-img(src='./images/brain.svg')
+		+e.__item
+			+e.__item-inner
+				+e.__item-text
+					+e('h1').__item-title.h1 BlockChain
+					+e.__item-descr Сбор, хранение и анализ данных
+				+e.__item-pic.blockchain-pic
+					picture
+						source(srcset='./images/blockhain.svg' media='(min-width: 1024px)')
+						source(srcset='./images/blockhain_md.svg' media='(min-width: 768px) and (max-width: 1023px)')
+						source(srcset='./images/blockhain_sm.svg' media='(max-width: 767px)')
+						+e('img').__item-img(src='./images/blockhain.svg')
+		+e.__item
+			+e.__item-inner
+				+e.__item-text
+					+e('h1').__item-title.h1 Map
+					+e.__item-descr Интеллектуальное картографирование 
+				+e.__item-pic.map-pic
+					picture
+						source(srcset='./images/map.svg' media='(min-width: 1024px)')
+						source(srcset='./images/map_md.svg' media='(min-width: 768px) and (max-width: 1023px)')
+						source(srcset='./images/map_sm.svg' media='(max-width: 767px)')
+						+e('img').__item-img(src='./images/map.svg')
 
 	+e.__bot
 		+e.__bot-text Создание и развертывание приложений на облачной платформе Интернета вещей
